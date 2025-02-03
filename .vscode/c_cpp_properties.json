@@ -1,0 +1,33 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/opt/homebrew/opt/qt@6/include",
+                "/opt/homebrew/opt/qt@6/include/QtCharts",
+                "/opt/homebrew/opt/qt@6/include/QtCore",
+                "/opt/homebrew/opt/qt@6/include/QtGui",
+                "/opt/homebrew/opt/qt@6/include/QtWidgets"
+            ],
+            "defines": [],
+            "macFrameworkPath": [
+                "/opt/homebrew/opt/qt@6/lib"
+            ],
+            "compilerPath": "/Library/Developer/CommandLineTools/usr/bin/clang++",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "macos-clang-x64",
+            "compileCommands": "${workspaceFolder}/build/compile_commands.json",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}",
+                    "/opt/homebrew/opt/qt@6/include"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            }
+        }
+    ],
+    "version": 4
+}

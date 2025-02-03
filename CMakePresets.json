@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "configurePresets": [
+      {
+        "name": "macos-arm64",
+        "generator": "Unix Makefiles",
+        "binaryDir": "${sourceDir}/build",
+        "cacheVariables": {
+          "CMAKE_PREFIX_PATH": "/opt/homebrew/opt/qt6",
+          "CMAKE_OSX_ARCHITECTURES": "arm64"
+        }
+      }
+    ]
+  }

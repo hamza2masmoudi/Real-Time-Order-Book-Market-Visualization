@@ -54,22 +54,22 @@ make -j8
 
 ## Project Structure
 
-orderbook/
-│── backend/               # Matching Engine & Order Book logic
-│   ├── orderbook.h        # Core data structures for order book
-│   ├── orderbook.cpp      # Handles order placement and execution
-│   ├── matching_engine.h  # Matching logic for buy/sell orders
-│   ├── matching_engine.cpp
-│
-│── frontend/              # GUI components
-│   ├── mainwindow.h       # UI logic for interactive trading
-│   ├── mainwindow.cpp     # Trading interface and order simulation
-│   ├── chart_widget.h     # Handles QtCharts visualization
-│   ├── chart_widget.cpp
-│
-│── main.cpp               # Entry point of the application
-│── CMakeLists.txt         # Build configuration
-│── README.md              # Project Documentation
+- **backend/**
+  - `orderbook.h` - Core data structures for order book
+  - `orderbook.cpp` - Handles order placement and execution
+  - `matching_engine.h` - Matching logic for buy/sell orders
+  - `matching_engine.cpp` - Order matching logic
+
+- **frontend/**
+  - `mainwindow.h` - UI logic for interactive trading
+  - `mainwindow.cpp` - Trading interface and order simulation
+  - `chart_widget.h` - Handles QtCharts visualization
+  - `chart_widget.cpp` - Manages chart rendering
+
+- **Root Files:**
+  - `main.cpp` - Entry point of the application
+  - `CMakeLists.txt` - Build configuration
+  - `README.md` - Project Documentation
 
 
 ## How It Works
