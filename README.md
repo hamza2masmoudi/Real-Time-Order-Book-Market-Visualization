@@ -41,7 +41,7 @@ brew install qt@6
 sudo apt install qt6-base-dev qt6-charts-dev
 
 # 2️⃣ Clone the Repository
-git clone https://github.com/yourusername/QuantOrderFlow.git
+git clone 
 cd orderbook-project
 
 # 3️⃣ Build the Project
