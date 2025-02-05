@@ -1,7 +1,7 @@
 # **Real-Time Order Book & Market Visualization**
 
 ## **Overview**
-**real-time order book** and **interactive market depth visualizer** built with **C++** and **Qt6**. It simulates a live trading environment where users can **place orders**, **view market depth**, and **monitor trade execution**. The project is designed for **quantitative finance** and **high-frequency trading (HFT) system simulation**, demonstrating your ability to handle performance-critical systems while delivering a polished user experience.
+A **real-time order book** and **interactive market depth visualizer** built with **C++** and **Qt6**. It simulates a live trading environment where users can **place orders**, **view market depth**, and **monitor trade execution**. The project is designed for **quantitative finance** and **high-frequency trading (HFT) system simulation**, demonstrating your ability to handle performance-critical systems while delivering a polished user experience.
 
 ---
 
@@ -32,9 +32,9 @@
 
 ## **Installation & Setup**
 
-# 1️⃣ Install Dependencies
+### **1️⃣ Install Dependencies**
+#### **For macOS (Homebrew)**
 
-# For macOS (Homebrew)
 brew install qt@6
 
 # For Linux
