@@ -1057,6 +1057,33 @@ CMakeFiles/orderbook.dir/main.cpp.o: \
   /opt/homebrew/opt/qt@6/include/QtCore/qlocale.h \
   /opt/homebrew/opt/qt@6/include/QtCore/qvariant.h \
   /opt/homebrew/opt/qt@6/include/QtGui/qguiapplication_platform.h \
+  /opt/homebrew/opt/qt@6/lib/QtCore.framework/Headers/QFile \
+  /opt/homebrew/opt/qt@6/lib/QtCore.framework/Headers/qfile.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/qfiledevice.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/qiodevice.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/filesystem \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/copy_options.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/directory_entry.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/file_status.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/file_type.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/perms.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/file_time_type.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/filesystem_error.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/path.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/iomanip \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/istream \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/ostream \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/bitset \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/operations.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/perm_options.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/space_info.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/directory_iterator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/directory_options.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/path_iterator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/u8path.h \
+  /opt/homebrew/opt/qt@6/lib/QtCore.framework/Headers/QDebug \
+  /opt/homebrew/opt/qt@6/lib/QtCore.framework/Headers/qdebug.h \
   /Users/hamza/orderbook-project/frontend/mainwindow.h \
   /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QMainWindow \
   /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qmainwindow.h \
@@ -1101,7 +1128,6 @@ CMakeFiles/orderbook.dir/main.cpp.o: \
   /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qgraphicswidget.h \
   /opt/homebrew/opt/qt@6/include/QtWidgets/qgraphicslayoutitem.h \
   /opt/homebrew/opt/qt@6/include/QtGui/qevent.h \
-  /opt/homebrew/opt/qt@6/include/QtCore/qiodevice.h \
   /opt/homebrew/opt/qt@6/include/QtCore/qurl.h \
   /opt/homebrew/opt/qt@6/include/QtGui/qeventpoint.h \
   /opt/homebrew/opt/qt@6/include/QtGui/qvector2d.h \

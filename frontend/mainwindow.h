@@ -52,14 +52,21 @@ private:
     QComboBox* orderTypeCombo;
     QPushButton* submitButton;
     QGroupBox* orderFormGroup;
-    QSplitter* mainSplitter;
 
-    // Existing chart for order book depth
+    // We'll create two main splitters:
+    // 1) mainHorizontalSplitter (left vs right)
+    // 2) On the right side, a vertical splitter for the two charts
+    QSplitter* mainHorizontalSplitter;
+    QSplitter* rightVerticalSplitter;
+
+    // For the left side, we won't store a separate splitter, just a layout
+    // We'll also keep the trade table there.
+
+    // Chart objects
     QChartView* depth_chart_view;
     QLineSeries* bids_series;
     QLineSeries* asks_series;
 
-    // Advanced chart (candlestick chart with moving average)
     QChartView* advanced_chart_view;
     QCandlestickSeries* candlestick_series;
     QLineSeries* moving_average_series;

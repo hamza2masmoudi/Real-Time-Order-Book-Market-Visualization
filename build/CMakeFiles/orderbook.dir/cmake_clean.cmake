@@ -12,10 +12,13 @@ file(REMOVE_RECURSE
   "CMakeFiles/orderbook.dir/main.cpp.o.d"
   "CMakeFiles/orderbook.dir/orderbook_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/orderbook.dir/orderbook_autogen/mocs_compilation.cpp.o.d"
+  "CMakeFiles/orderbook.dir/qrc_resources.cpp.o"
+  "CMakeFiles/orderbook.dir/qrc_resources.cpp.o.d"
   "orderbook"
   "orderbook.pdb"
   "orderbook_autogen/mocs_compilation.cpp"
   "orderbook_autogen/timestamp"
+  "qrc_resources.cpp"
 )
 
 # Per-language clean rules from dependency scanning.

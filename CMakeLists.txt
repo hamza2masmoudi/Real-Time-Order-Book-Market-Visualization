@@ -4,14 +4,12 @@ project(orderbook LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Enable Qt's automatic processing (MOC, UIC, etc.)
+# Enable Qt's automatic processing
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTORCC ON)
 
 find_package(Qt6 6.2 REQUIRED COMPONENTS Core Gui Widgets Charts)
-
-# New: find spdlog
 find_package(spdlog REQUIRED)
 
 include_directories(
@@ -19,11 +17,16 @@ include_directories(
     ${CMAKE_SOURCE_DIR}/frontend
 )
 
+# 1) Compile the .qrc resource file
+qt_add_resources(myResources resources.qrc)
+
 add_executable(orderbook
     main.cpp
     backend/orderbook.cpp
     backend/matching_engine.cpp
     frontend/mainwindow.cpp
+    #2) we add resource compilation result
+    ${myResources}
 )
 
 target_link_libraries(orderbook PRIVATE
@@ -31,7 +34,5 @@ target_link_libraries(orderbook PRIVATE
     Qt6::Gui
     Qt6::Widgets
     Qt6::Charts
-
-    # Link spdlog
     spdlog::spdlog
 )

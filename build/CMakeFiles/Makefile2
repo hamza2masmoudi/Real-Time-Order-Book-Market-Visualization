@@ -88,12 +88,12 @@ CMakeFiles/orderbook.dir/all: CMakeFiles/orderbook_autogen.dir/all
 CMakeFiles/orderbook.dir/all: CMakeFiles/orderbook_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderbook.dir/build.make CMakeFiles/orderbook.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderbook.dir/build.make CMakeFiles/orderbook.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/hamza/orderbook-project/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target orderbook"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/hamza/orderbook-project/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target orderbook"
 .PHONY : CMakeFiles/orderbook.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/orderbook.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hamza/orderbook-project/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hamza/orderbook-project/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/orderbook.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hamza/orderbook-project/build/CMakeFiles 0
 .PHONY : CMakeFiles/orderbook.dir/rule
@@ -105,7 +105,7 @@ orderbook: CMakeFiles/orderbook.dir/rule
 # codegen rule for target.
 CMakeFiles/orderbook.dir/codegen: CMakeFiles/orderbook_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderbook.dir/build.make CMakeFiles/orderbook.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/hamza/orderbook-project/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Finished codegen for target orderbook"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/hamza/orderbook-project/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Finished codegen for target orderbook"
 .PHONY : CMakeFiles/orderbook.dir/codegen
 
 # clean rule for target.
@@ -152,7 +152,7 @@ CMakeFiles/orderbook_autogen_timestamp_deps.dir/clean:
 CMakeFiles/orderbook_autogen.dir/all: CMakeFiles/orderbook_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderbook_autogen.dir/build.make CMakeFiles/orderbook_autogen.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderbook_autogen.dir/build.make CMakeFiles/orderbook_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/hamza/orderbook-project/build/CMakeFiles --progress-num=8 "Built target orderbook_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/hamza/orderbook-project/build/CMakeFiles --progress-num=10 "Built target orderbook_autogen"
 .PHONY : CMakeFiles/orderbook_autogen.dir/all
 
 # Build rule for subdir invocation for target.
@@ -169,7 +169,7 @@ orderbook_autogen: CMakeFiles/orderbook_autogen.dir/rule
 # codegen rule for target.
 CMakeFiles/orderbook_autogen.dir/codegen: CMakeFiles/orderbook_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderbook_autogen.dir/build.make CMakeFiles/orderbook_autogen.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/hamza/orderbook-project/build/CMakeFiles --progress-num=8 "Finished codegen for target orderbook_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/hamza/orderbook-project/build/CMakeFiles --progress-num=10 "Finished codegen for target orderbook_autogen"
 .PHONY : CMakeFiles/orderbook_autogen.dir/codegen
 
 # clean rule for target.

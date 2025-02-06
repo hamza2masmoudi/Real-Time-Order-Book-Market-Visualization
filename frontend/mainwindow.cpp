@@ -22,7 +22,7 @@
 #include <QTableWidget>
 #include <algorithm>
 
-// Constructor: set up UI, charts, and timers.
+// Constructor
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent),
       engine(new MatchingEngine),
@@ -30,20 +30,24 @@ MainWindow::MainWindow(QWidget *parent)
 {
     engine->start();
 
+    // Setup the main UI layout (splitters)
     setupUI();
+
+    // Create chart objects, but do NOT attach them to the old splitter
+    // We'll just set up chart objects in memory, then attach to rightVerticalSplitter
     setupChart();
     setupAdvancedChart();
 
-    // Update GUI every second
+    // Periodic GUI updates
     connect(update_timer, &QTimer::timeout, this, &MainWindow::update_gui);
     update_timer->start(1000);
 
-    // Timer for simulated limit orders.
+    // Timer for simulated limit orders
     QTimer* simulationTimer = new QTimer(this);
     connect(simulationTimer, &QTimer::timeout, this, &MainWindow::simulateOrder);
     simulationTimer->start(500);
 
-    // Timer for live market data simulation (market orders).
+    // Timer for live market data simulation (market orders)
     QTimer* liveDataTimer = new QTimer(this);
     connect(liveDataTimer, &QTimer::timeout, this, &MainWindow::simulateLiveMarketData);
     liveDataTimer->start(300);
@@ -51,25 +55,31 @@ MainWindow::MainWindow(QWidget *parent)
     statusBar()->showMessage("Ready");
 }
 
-MainWindow::~MainWindow() {
+MainWindow::~MainWindow()
+{
     engine->stop();
     delete engine;
 }
 
-void MainWindow::setupUI() {
-    // Create a central widget and layout
-    QWidget* central = new QWidget(this);
-    QVBoxLayout* mainLayout = new QVBoxLayout(central);
+// 1) Create a horizontal splitter => left panel (metrics, form, table), right panel (vertical splitter for 2 charts)
+void MainWindow::setupUI() 
+{
+    // Top-level horizontal splitter for left vs. right
+    QSplitter* mainHorizontalSplitter = new QSplitter(Qt::Horizontal, this);
 
-    // 1. Metrics Dashboard at the top
+    // LEFT PANEL (vertical)
+    QWidget* leftPanelWidget = new QWidget;
+    QVBoxLayout* leftPanelLayout = new QVBoxLayout(leftPanelWidget);
+
+    // (A) Metrics Dashboard
     QGroupBox* metricsBox = new QGroupBox("Metrics Dashboard");
     QVBoxLayout* metricsLayout = new QVBoxLayout(metricsBox);
 
     latencyBar = new QProgressBar;
-    latencyBar->setRange(0, 2000); // 0..2000 ms
+    latencyBar->setRange(0, 2000);
 
     throughputBar = new QProgressBar;
-    throughputBar->setRange(0, 1000); // 0..1000 ops for demonstration
+    throughputBar->setRange(0, 1000);
 
     latencyLabel = new QLabel("Latency: 0 ms");
     throughputLabel = new QLabel("Throughput: 0 ops");
@@ -80,10 +90,7 @@ void MainWindow::setupUI() {
     metricsLayout->addWidget(throughputBar);
     metricsBox->setLayout(metricsLayout);
 
-    // Add metrics box to main layout
-    mainLayout->addWidget(metricsBox);
-
-    // 2. Order Submission Form
+    // (B) Order Submission Form
     orderFormGroup = new QGroupBox("Order Submission", this);
     QFormLayout* formLayout = new QFormLayout;
 
@@ -91,9 +98,16 @@ void MainWindow::setupUI() {
     quantityEdit = new QLineEdit;
     sideCombo = new QComboBox;
     sideCombo->addItems({"Buy", "Sell"});
+    sideCombo->setMinimumContentsLength(10);
+    sideCombo->setSizeAdjustPolicy(QComboBox::AdjustToContents);
+
     orderTypeCombo = new QComboBox;
     orderTypeCombo->addItems({"Limit", "Market", "Stop-Loss", "Iceberg"});
+    orderTypeCombo->setMinimumContentsLength(10);
+    orderTypeCombo->setSizeAdjustPolicy(QComboBox::AdjustToContents);
+
     submitButton = new QPushButton("Submit Order");
+    connect(submitButton, &QPushButton::clicked, this, &MainWindow::submitOrder);
 
     formLayout->addRow("Price:", priceEdit);
     formLayout->addRow("Quantity:", quantityEdit);
@@ -102,13 +116,7 @@ void MainWindow::setupUI() {
     formLayout->addRow("", submitButton);
     orderFormGroup->setLayout(formLayout);
 
-    connect(submitButton, &QPushButton::clicked, this, &MainWindow::submitOrder);
-
-    // 3. Splitter for form, trade history, and charts
-    mainSplitter = new QSplitter(Qt::Vertical, this);
-    mainSplitter->addWidget(orderFormGroup);
-
-    // Create the trade history table
+    // (C) Trade History Table
     tradeTable = new QTableWidget;
     tradeTable->setColumnCount(5);
     QStringList headers;
@@ -117,32 +125,52 @@ void MainWindow::setupUI() {
     tradeTable->setEditTriggers(QAbstractItemView::NoEditTriggers);
     tradeTable->setSelectionBehavior(QAbstractItemView::SelectRows);
     tradeTable->setSelectionMode(QAbstractItemView::SingleSelection);
-    tradeTable->setMinimumHeight(150);
-    mainSplitter->addWidget(tradeTable);
+    tradeTable->setMinimumHeight(200);
 
-    // Add splitter to the layout
-    mainLayout->addWidget(mainSplitter);
+    // Put them all into the left panel layout
+    leftPanelLayout->addWidget(metricsBox);
+    leftPanelLayout->addWidget(orderFormGroup);
+    leftPanelLayout->addWidget(tradeTable);
+    leftPanelLayout->addStretch(1);
+    leftPanelWidget->setLayout(leftPanelLayout);
 
-    central->setLayout(mainLayout);
-    setCentralWidget(central);
+    // RIGHT PANEL (vertical splitter for 2 charts)
+    QSplitter* rightVert = new QSplitter(Qt::Vertical, this);
 
-    // Apply modern style
-    setStyleSheet("QGroupBox { font-weight: bold; margin-top: 1em; } "
-                  "QLineEdit, QComboBox, QPushButton { font-size: 14px; padding: 4px; }");
+    // Add left and right to mainHorizontalSplitter
+    mainHorizontalSplitter->addWidget(leftPanelWidget);
+    mainHorizontalSplitter->addWidget(rightVert);
+
+    // Let the right side expand more
+    mainHorizontalSplitter->setStretchFactor(0, 0);
+    mainHorizontalSplitter->setStretchFactor(1, 1);
+
+    // Make the horizontal splitter the central widget
+    setCentralWidget(mainHorizontalSplitter);
+
+    // Apply a style
+    setStyleSheet(
+        "QGroupBox { font-weight: bold; margin-top: 1em; } "
+        "QLineEdit, QComboBox, QPushButton { font-size: 14px; padding: 4px; }"
+    );
+
+    // Store pointer to rightVert so we can attach charts after creation
+    this->rightVerticalSplitter = rightVert;
 }
 
-void MainWindow::setupChart() {
+// 2) Depth Chart
+void MainWindow::setupChart()
+{
     QChart* chart = new QChart;
     bids_series = new QLineSeries;
     asks_series = new QLineSeries;
 
     bids_series->setName("Bids");
     asks_series->setName("Asks");
-
     chart->addSeries(bids_series);
     chart->addSeries(asks_series);
 
-    // Create labeled axes.
+    // Axes
     QValueAxis* axisX = new QValueAxis;
     axisX->setTitleText("Price");
     axisX->setRange(0, 110);
@@ -166,18 +194,21 @@ void MainWindow::setupChart() {
     depth_chart_view->setRubberBand(QChartView::RectangleRubberBand);
     depth_chart_view->setInteractive(true);
 
-    // Add the chart view to the splitter
-    mainSplitter->addWidget(depth_chart_view);
+    // Add to the vertical splitter if available
+    if (rightVerticalSplitter) {
+        rightVerticalSplitter->addWidget(depth_chart_view);
+    }
 }
 
-void MainWindow::setupAdvancedChart() {
+// 3) Advanced Candlestick Chart
+void MainWindow::setupAdvancedChart()
+{
     QChart* advChart = new QChart;
     
-    // Create a candlestick series.
+    // Candlestick
     candlestick_series = new QCandlestickSeries;
     candlestick_series->setName("Candlestick");
 
-    // Generate simulated candlestick data.
     const int numCandles = 10;
     QVector<QCandlestickSet*> candleSets;
     for (int i = 0; i < numCandles; i++) {
@@ -195,28 +226,29 @@ void MainWindow::setupAdvancedChart() {
     }
     advChart->addSeries(candlestick_series);
 
-    // Y-axis for price
+    // Axes
     QValueAxis* axisYAdv = new QValueAxis;
     axisYAdv->setTitleText("Price");
     axisYAdv->setRange(40, 110);
     advChart->addAxis(axisYAdv, Qt::AlignLeft);
     candlestick_series->attachAxis(axisYAdv);
 
-    // X-axis for time index
     QValueAxis* axisXAdv = new QValueAxis;
     axisXAdv->setTitleText("Time (Candle Index)");
     axisXAdv->setRange(0, numCandles - 1);
     advChart->addAxis(axisXAdv, Qt::AlignBottom);
     candlestick_series->attachAxis(axisXAdv);
 
-    // Simple moving average
+    // Moving Average
     moving_average_series = new QLineSeries;
     moving_average_series->setName("Moving Average");
     const int windowSize = 3;
     QVector<double> closes;
+    closes.reserve(numCandles);
     for (int i = 0; i < numCandles; i++) {
         closes.append(candleSets[i]->close());
     }
+
     for (int i = windowSize - 1; i < numCandles; i++) {
         double sum = 0;
         for (int j = i - windowSize + 1; j <= i; j++) {
@@ -237,12 +269,16 @@ void MainWindow::setupAdvancedChart() {
     advanced_chart_view->setRubberBand(QChartView::RectangleRubberBand);
     advanced_chart_view->setInteractive(true);
 
-    // Add advanced chart to the splitter
-    mainSplitter->addWidget(advanced_chart_view);
+    // Add advanced chart to the right vertical splitter
+    if (rightVerticalSplitter) {
+        rightVerticalSplitter->addWidget(advanced_chart_view);
+    }
 }
 
-void MainWindow::update_gui() {
-    // 1. Update order book chart
+// 4) Periodic GUI Updates
+void MainWindow::update_gui()
+{
+    // (A) Update order book
     bids_series->clear();
     asks_series->clear();
 
@@ -250,12 +286,14 @@ void MainWindow::update_gui() {
     const auto& bids = orderBook.get_bids();
     const auto& asks = orderBook.get_asks();
 
-    for (const auto& bid : bids)
+    for (const auto& bid : bids) {
         bids_series->append(bid.first, bid.second);
-    for (const auto& ask : asks)
+    }
+    for (const auto& ask : asks) {
         asks_series->append(ask.first, ask.second);
+    }
 
-    // Update Y-axis range based on max quantity
+    // Update Y-axis range
     QChart* chart = depth_chart_view->chart();
     if (chart) {
         double maxQty = 0;
@@ -272,7 +310,7 @@ void MainWindow::update_gui() {
         }
     }
 
-    // 2. Update trade history table
+    // (B) Update trade history table
     auto newTrades = orderBook.get_trades();
     for (const auto& trade : newTrades) {
         int row = tradeTable->rowCount();
@@ -284,11 +322,10 @@ void MainWindow::update_gui() {
         tradeTable->setItem(row, 4, new QTableWidgetItem(QString::number(trade.maker_order_id)));
     }
 
-    // 3. Update metrics (latency, throughput)
+    // (C) Update metrics
     double avgLatency = engine->getAverageLatencyMs();
     double throughput = engine->getThroughputOps();
 
-    // Convert to integer for progress bars (clamp if needed)
     int latencyVal = static_cast<int>(std::min(avgLatency, 2000.0));
     int throughputVal = static_cast<int>(std::min(throughput, 1000.0));
 
@@ -298,12 +335,14 @@ void MainWindow::update_gui() {
     latencyLabel->setText(QString("Latency: %1 ms").arg(avgLatency, 0, 'f', 2));
     throughputLabel->setText(QString("Throughput: %1 ops").arg(throughput, 0, 'f', 1));
 
-    // 4. Update status bar for total processed orders
+    // (D) Status bar for total processed orders
     uint64_t processed = engine->getProcessedOrderCount();
     statusBar()->showMessage(QString("Processed Orders: %1").arg(processed));
 }
 
-void MainWindow::submitOrder() {
+// 5) Submitting an Order
+void MainWindow::submitOrder()
+{
     bool okPrice, okQty;
     double price = priceEdit->text().toDouble(&okPrice);
     double quantity = quantityEdit->text().toDouble(&okQty);
@@ -323,10 +362,13 @@ void MainWindow::submitOrder() {
     order.price = price;
     order.quantity = quantity;
     order.is_bid = isBuy;
-    if (orderTypeStr == "Market")
+
+    if (orderTypeStr == "Market") {
         order.type = OrderType::MARKET;
-    else
+    } else {
         order.type = OrderType::LIMIT;
+    }
+
     order.timestamp = static_cast<uint64_t>(QDateTime::currentMSecsSinceEpoch());
 
     engine->submit_order(order);
@@ -336,9 +378,11 @@ void MainWindow::submitOrder() {
     statusBar()->showMessage("Order submitted.");
 }
 
-void MainWindow::simulateOrder() {
-    double price = 1.0 + QRandomGenerator::global()->generateDouble() * 99.0;  // range ~1..100
-    double quantity = 1.0 + QRandomGenerator::global()->generateDouble() * 49.0; // ~1..50
+// 6) Simulate a random limit order
+void MainWindow::simulateOrder()
+{
+    double price = 1.0 + QRandomGenerator::global()->generateDouble() * 99.0;
+    double quantity = 1.0 + QRandomGenerator::global()->generateDouble() * 49.0;
     bool isBuy = (QRandomGenerator::global()->bounded(0, 2) == 0);
 
     Order order;
@@ -353,9 +397,11 @@ void MainWindow::simulateOrder() {
     engine->submit_order(order);
 }
 
-void MainWindow::simulateLiveMarketData() {
-    double price = 50.0 + QRandomGenerator::global()->generateDouble() * 50.0; // ~50..100
-    double quantity = 1.0 + QRandomGenerator::global()->generateDouble() * 20.0; // 1..21
+// 7) Simulate a random market order
+void MainWindow::simulateLiveMarketData()
+{
+    double price = 50.0 + QRandomGenerator::global()->generateDouble() * 50.0;
+    double quantity = 1.0 + QRandomGenerator::global()->generateDouble() * 20.0;
     bool isBuy = (QRandomGenerator::global()->bounded(0, 2) == 0);
 
     Order order;

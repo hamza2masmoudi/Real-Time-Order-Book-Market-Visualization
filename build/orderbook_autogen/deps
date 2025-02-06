@@ -851,6 +851,7 @@ orderbook_autogen/timestamp: \
 	/Users/hamza/orderbook-project/frontend/mainwindow.cpp \
 	/Users/hamza/orderbook-project/frontend/mainwindow.h \
 	/Users/hamza/orderbook-project/main.cpp \
+	/Users/hamza/orderbook-project/resources.qrc \
 	/opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/QAbstractAxis \
 	/opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/QAbstractSeries \
 	/opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/QCandlestickSeries \

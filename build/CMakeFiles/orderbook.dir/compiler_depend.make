@@ -853,6 +853,7 @@ orderbook_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/MacOSX14.4
   /Users/hamza/orderbook-project/frontend/mainwindow.cpp \
   /Users/hamza/orderbook-project/frontend/mainwindow.h \
   /Users/hamza/orderbook-project/main.cpp \
+  /Users/hamza/orderbook-project/resources.qrc \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/QAbstractAxis \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/QAbstractSeries \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/QCandlestickSeries \
@@ -3745,6 +3746,8 @@ CMakeFiles/3.31.5/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_set_difference.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_search_n.h:
+
+/Users/hamza/orderbook-project/resources.qrc:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/appleapiopts.h:
 

@@ -1,0 +1,177 @@
+/* GLOBALS
+   ---------------------------------------------------
+   We start by styling QWidget so that most
+   backgrounds, text colors, and fonts are consistent.
+*/
+
+QWidget {
+    background-color: #2b2b2b;
+    color: #d7dae0;
+    font-family: "Segoe UI", "Open Sans", sans-serif;
+    font-size: 12pt;
+}
+
+/* HEADERS AND LABELS
+   ---------------------------------------------------
+   Makes QLabels slightly bigger/bolder for improved readability.
+*/
+QLabel {
+    font-size: 12pt;
+    font-weight: 400;
+    color: #d7dae0;
+}
+
+/* QGroupBox
+   ---------------------------------------------------
+   Adds a border, radius, and colored title for grouping.
+*/
+QGroupBox {
+    border: 2px solid #4d4d4d;
+    border-radius: 5px;
+    margin-top: 1em;
+    padding: 5px;
+}
+QGroupBox:title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    margin-left: 10px;
+    padding: 0 5px 0 5px;
+    background-color: transparent;
+    color: #63b0ff;
+    font-weight: bold;
+}
+
+/* LINEEDIT, COMBOBOX, SPINBOX
+   ---------------------------------------------------
+   Uniform fields with subtle border & highlight on focus.
+*/
+QLineEdit, QComboBox, QSpinBox, QDoubleSpinBox {
+    background-color: #3a3f4b;
+    border: 1px solid #555;
+    border-radius: 3px;
+    padding: 5px;
+    color: #d7dae0;
+}
+QLineEdit:focus, QComboBox:focus, QSpinBox:focus, QDoubleSpinBox:focus {
+    border: 1px solid #63b0ff;
+}
+
+QComboBox::drop-down {
+    border: 0px;
+    background: transparent;
+}
+QComboBox::down-arrow {
+    image: url(":/icons/down-arrow.png"); /* Optional arrow icon if you have it */
+    width: 14px;
+    height: 14px;
+}
+
+/* PUSH BUTTONS
+   ---------------------------------------------------
+   Simple styling, plus a hover/pressed effect.
+*/
+QPushButton {
+    background-color: #63b0ff;
+    color: #2b2b2b;
+    border: 1px solid #63b0ff;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-weight: 500;
+}
+QPushButton:hover {
+    background-color: #76bdff;
+    border: 1px solid #76bdff;
+}
+QPushButton:pressed {
+    background-color: #4fa0e5;
+    border: 1px solid #4fa0e5;
+}
+
+/* PROGRESS BAR
+   ---------------------------------------------------
+   Dark background, bright chunk. 
+*/
+QProgressBar {
+    background-color: #3a3f4b;
+    border: 1px solid #555;
+    border-radius: 4px;
+    text-align: center;
+    color: #d7dae0;
+}
+QProgressBar::chunk {
+    background-color: #63b0ff;
+    border-radius: 4px;
+}
+
+/* TABLE WIDGET
+   ---------------------------------------------------
+   Slightly custom table look, with highlight on selection.
+*/
+QTableWidget {
+    gridline-color: #555;
+    selection-background-color: #63b0ff;
+    selection-color: #2b2b2b;
+    background-color: #3a3f4b;
+}
+QHeaderView::section {
+    background-color: #444;
+    color: #d7dae0;
+    padding: 5px;
+    border: none;
+    border-right: 1px solid #555;
+}
+
+/* SPLITTER
+   ---------------------------------------------------
+   A subtle handle for QSplitter.
+*/
+QSplitter::handle {
+    background-color: #555;
+}
+QSplitter::handle:hover {
+    background-color: #63b0ff;
+}
+
+/* SCROLLBARS
+   ---------------------------------------------------
+   A minimalistic dark scrollbar style with hover effect.
+*/
+QScrollBar:horizontal {
+    height: 10px;
+    background-color: #3a3f4b;
+    margin: 0px;
+}
+QScrollBar::handle:horizontal {
+    background-color: #555;
+    min-width: 20px;
+    border-radius: 3px;
+}
+QScrollBar::handle:horizontal:hover {
+    background-color: #63b0ff;
+}
+
+/* Vertical same concept */
+QScrollBar:vertical {
+    width: 10px;
+    background-color: #3a3f4b;
+    margin: 0px;
+}
+QScrollBar::handle:vertical {
+    background-color: #555;
+    min-height: 20px;
+    border-radius: 3px;
+}
+QScrollBar::handle:vertical:hover {
+    background-color: #63b0ff;
+}
+
+/* CHART TOOLTIP
+   ---------------------------------------------------
+   You can also style chart tooltips if you use them.
+   Example:
+   QToolTip { 
+       background-color: #444; 
+       color: #d7dae0; 
+       border: 1px solid #555; 
+   }
+*/

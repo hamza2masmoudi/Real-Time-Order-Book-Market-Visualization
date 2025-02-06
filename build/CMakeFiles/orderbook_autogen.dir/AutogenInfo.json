@@ -457,7 +457,8 @@
 		"/opt/homebrew/lib/cmake/fmt/fmt-targets.cmake",
 		"/opt/homebrew/lib/cmake/fmt/fmt-targets-release.cmake",
 		"/opt/homebrew/lib/cmake/spdlog/spdlogConfigTargets.cmake",
-		"/opt/homebrew/lib/cmake/spdlog/spdlogConfigTargets-release.cmake"
+		"/opt/homebrew/lib/cmake/spdlog/spdlogConfigTargets-release.cmake",
+		"/Users/hamza/orderbook-project/resources.qrc"
 	],
 	"CMAKE_SOURCE_DIR" : "/Users/hamza/orderbook-project",
 	"CROSS_CONFIG" : false,
@@ -554,7 +555,7 @@
 	],
 	"MOC_PREDEFS_FILE" : "/Users/hamza/orderbook-project/build/orderbook_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
-	"MOC_SKIP" : [],
+	"MOC_SKIP" : [ "/Users/hamza/orderbook-project/build/qrc_resources.cpp" ],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 8,
 	"PARSE_CACHE_FILE" : "/Users/hamza/orderbook-project/build/CMakeFiles/orderbook_autogen.dir/ParseCache.txt",
@@ -576,7 +577,7 @@
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],
-	"UIC_SKIP" : [],
+	"UIC_SKIP" : [ "/Users/hamza/orderbook-project/build/qrc_resources.cpp" ],
 	"UIC_UI_FILES" : [],
 	"USE_BETTER_GRAPH" : false,
 	"VERBOSITY" : 0
