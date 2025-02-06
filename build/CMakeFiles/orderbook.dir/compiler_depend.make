@@ -850,21 +850,26 @@ orderbook_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/MacOSX14.4
   CMakeFiles/3.31.5/CMakeCXXCompiler.cmake \
   CMakeFiles/3.31.5/CMakeSystem.cmake \
   orderbook_autogen/moc_predefs.h \
-  /Users/hamza/orderbook-project/frontend/chart_widget.cpp \
-  /Users/hamza/orderbook-project/frontend/chart_widget.h \
   /Users/hamza/orderbook-project/frontend/mainwindow.cpp \
   /Users/hamza/orderbook-project/frontend/mainwindow.h \
   /Users/hamza/orderbook-project/main.cpp \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/QAbstractAxis \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/QAbstractSeries \
+  /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/QCandlestickSeries \
+  /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/QCandlestickSet \
+  /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/QCategoryAxis \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/QChart \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/QChartGlobal \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/QChartView \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/QLegend \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/QLineSeries \
+  /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/QValueAxis \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/QXYSeries \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/qabstractaxis.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/qabstractseries.h \
+  /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/qcandlestickseries.h \
+  /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/qcandlestickset.h \
+  /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/qcategoryaxis.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/qchart.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/qchartglobal.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/qchartview.h \
@@ -872,6 +877,7 @@ orderbook_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/MacOSX14.4
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/qlineseries.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/qtcharts-config.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/qtchartsexports.h \
+  /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/qvalueaxis.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/qxyseries.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCore.framework/Versions/A/Headers/QList \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCore.framework/Versions/A/Headers/QMargins \
@@ -935,6 +941,7 @@ orderbook_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/MacOSX14.4
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCore.framework/Versions/A/Headers/qhashfunctions.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCore.framework/Versions/A/Headers/qiodevice.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCore.framework/Versions/A/Headers/qiodevicebase.h \
+  /opt/homebrew/Cellar/qt/6.7.3/lib/QtCore.framework/Versions/A/Headers/qitemselectionmodel.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCore.framework/Versions/A/Headers/qiterable.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCore.framework/Versions/A/Headers/qiterator.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCore.framework/Versions/A/Headers/qlatin1stringview.h \
@@ -1015,7 +1022,6 @@ orderbook_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/MacOSX14.4
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtGui.framework/Versions/A/Headers/QBrush \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtGui.framework/Versions/A/Headers/QFont \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtGui.framework/Versions/A/Headers/QImage \
-  /opt/homebrew/Cellar/qt/6.7.3/lib/QtGui.framework/Versions/A/Headers/QPainter \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtGui.framework/Versions/A/Headers/QPen \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtGui.framework/Versions/A/Headers/QTransform \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtGui.framework/Versions/A/Headers/qaction.h \
@@ -1063,21 +1069,27 @@ orderbook_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/MacOSX14.4
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtGui.framework/Versions/A/Headers/qvectornd.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtGui.framework/Versions/A/Headers/qwindowdefs.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/QComboBox \
+  /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/QFormLayout \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/QGraphicsView \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/QGraphicsWidget \
-  /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/QHBoxLayout \
+  /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/QGroupBox \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/QLabel \
+  /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/QLayout \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/QLineEdit \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/QMainWindow \
+  /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/QProgressBar \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/QPushButton \
-  /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/QVBoxLayout \
+  /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/QSplitter \
+  /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/QTableWidget \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qabstractbutton.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qabstractitemdelegate.h \
+  /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qabstractitemview.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qabstractscrollarea.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qabstractslider.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qabstractspinbox.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qboxlayout.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qcombobox.h \
+  /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qformlayout.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qframe.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qgraphicsitem.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qgraphicslayoutitem.h \
@@ -1085,19 +1097,24 @@ orderbook_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/MacOSX14.4
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qgraphicsview.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qgraphicswidget.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qgridlayout.h \
+  /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qgroupbox.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qlabel.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qlayout.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qlayoutitem.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qlineedit.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qmainwindow.h \
+  /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qprogressbar.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qpushbutton.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qrubberband.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qscrollarea.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qsizepolicy.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qslider.h \
+  /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qsplitter.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qstyle.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qstyleoption.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qtabbar.h \
+  /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qtableview.h \
+  /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qtablewidget.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qtabwidget.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qtwidgets-config.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsexports.h \
@@ -1121,6 +1138,14 @@ orderbook_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/MacOSX14.4
   /opt/homebrew/Cellar/qt/6.7.3/lib/cmake/Qt6/QtPublicToolHelpers.cmake \
   /opt/homebrew/Cellar/qt/6.7.3/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake \
   /opt/homebrew/bin/cmake \
+  /opt/homebrew/lib/cmake/fmt/fmt-config-version.cmake \
+  /opt/homebrew/lib/cmake/fmt/fmt-config.cmake \
+  /opt/homebrew/lib/cmake/fmt/fmt-targets-release.cmake \
+  /opt/homebrew/lib/cmake/fmt/fmt-targets.cmake \
+  /opt/homebrew/lib/cmake/spdlog/spdlogConfig.cmake \
+  /opt/homebrew/lib/cmake/spdlog/spdlogConfigTargets-release.cmake \
+  /opt/homebrew/lib/cmake/spdlog/spdlogConfigTargets.cmake \
+  /opt/homebrew/lib/cmake/spdlog/spdlogConfigVersion.cmake \
   /opt/homebrew/opt/qt@6/lib/cmake/Qt6/Qt6Config.cmake \
   /opt/homebrew/opt/qt@6/lib/cmake/Qt6/Qt6ConfigExtras.cmake \
   /opt/homebrew/opt/qt@6/lib/cmake/Qt6/Qt6ConfigVersion.cmake \
@@ -1443,8 +1468,6 @@ orderbook_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/MacOSX14.4
 
 /opt/homebrew/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:
 
-/opt/homebrew/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:
-
 /opt/homebrew/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake:
 
 /opt/homebrew/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake:
@@ -1512,8 +1535,6 @@ orderbook_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/MacOSX14.4
 /opt/homebrew/opt/qt@6/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake:
 
 /opt/homebrew/opt/qt@6/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-release.cmake:
-
-/opt/homebrew/opt/qt@6/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersionImpl.cmake:
 
 /opt/homebrew/opt/qt@6/lib/cmake/Qt6Widgets/Qt6WidgetsTargets-release.cmake:
 
@@ -1607,15 +1628,9 @@ orderbook_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/MacOSX14.4
 
 /opt/homebrew/opt/qt@6/lib/cmake/Qt6Gui/Qt6QMngPluginConfig.cmake:
 
-/opt/homebrew/opt/qt@6/lib/cmake/Qt6Gui/Qt6QMngPluginAdditionalTargetInfo.cmake:
-
 /opt/homebrew/opt/qt@6/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets.cmake:
 
 /opt/homebrew/opt/qt@6/lib/cmake/Qt6Gui/Qt6QMacHeifPluginConfig.cmake:
-
-/opt/homebrew/opt/qt@6/lib/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake:
-
-/opt/homebrew/opt/qt@6/lib/cmake/Qt6Gui/Qt6QJpegPluginTargets.cmake:
 
 /opt/homebrew/opt/qt@6/lib/cmake/Qt6Gui/Qt6QJpegPluginTargets-release.cmake:
 
@@ -1701,8 +1716,6 @@ orderbook_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/MacOSX14.4
 
 /opt/homebrew/opt/qt@6/lib/cmake/Qt6Core/Qt6QDarwinBluetoothPermissionPluginTargets-release.cmake:
 
-/opt/homebrew/opt/qt@6/lib/cmake/Qt6Core/Qt6CoreTargets-release.cmake:
-
 /opt/homebrew/opt/qt@6/lib/cmake/Qt6Gui/Qt6GuiVersionlessTargets.cmake:
 
 /opt/homebrew/opt/qt@6/lib/cmake/Qt6Core/Qt6CorePlugins.cmake:
@@ -1743,6 +1756,22 @@ orderbook_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/MacOSX14.4
 
 /opt/homebrew/opt/qt@6/lib/cmake/Qt6/Qt6Config.cmake:
 
+/opt/homebrew/lib/cmake/spdlog/spdlogConfigTargets.cmake:
+
+/opt/homebrew/lib/cmake/spdlog/spdlogConfigTargets-release.cmake:
+
+/opt/homebrew/lib/cmake/spdlog/spdlogConfig.cmake:
+
+/opt/homebrew/opt/qt@6/lib/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake:
+
+/opt/homebrew/opt/qt@6/lib/cmake/Qt6Gui/Qt6QJpegPluginTargets.cmake:
+
+/opt/homebrew/lib/cmake/fmt/fmt-targets.cmake:
+
+/opt/homebrew/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:
+
+/opt/homebrew/lib/cmake/fmt/fmt-targets-release.cmake:
+
 /opt/homebrew/Cellar/qt/6.7.3/lib/cmake/Qt6/QtPublicTestHelpers.cmake:
 
 /opt/homebrew/Cellar/qt/6.7.3/lib/cmake/Qt6/QtPublicTargetHelpers.cmake:
@@ -1755,8 +1784,6 @@ orderbook_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/MacOSX14.4
 
 /opt/homebrew/Cellar/qt/6.7.3/lib/cmake/Qt6/QtFeatureCommon.cmake:
 
-/opt/homebrew/Cellar/qt/6.7.3/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake:
-
 /opt/homebrew/Cellar/qt/6.7.3/lib/cmake/Qt6/FindWrapOpenGL.cmake:
 
 /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qwidget.h:
@@ -1767,7 +1794,15 @@ orderbook_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/MacOSX14.4
 
 /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qtabwidget.h:
 
+/opt/homebrew/opt/qt@6/lib/cmake/Qt6Core/Qt6CoreTargets-release.cmake:
+
+/opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qtableview.h:
+
 /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qstyleoption.h:
+
+/opt/homebrew/lib/cmake/spdlog/spdlogConfigVersion.cmake:
+
+/opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qsplitter.h:
 
 /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qsizepolicy.h:
 
@@ -1787,6 +1822,8 @@ orderbook_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/MacOSX14.4
 
 /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qgraphicsitem.h:
 
+/opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qformlayout.h:
+
 /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qcombobox.h:
 
 /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qabstractslider.h:
@@ -1795,11 +1832,21 @@ orderbook_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/MacOSX14.4
 
 /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qabstractbutton.h:
 
+/opt/homebrew/opt/qt@6/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersionImpl.cmake:
+
+/opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/QProgressBar:
+
 /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/QLineEdit:
+
+/opt/homebrew/Cellar/qt/6.7.3/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake:
+
+/opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/QLayout:
 
 /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/QLabel:
 
-/opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/QHBoxLayout:
+/opt/homebrew/opt/qt@6/lib/cmake/Qt6Gui/Qt6QMngPluginAdditionalTargetInfo.cmake:
+
+/opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/QGroupBox:
 
 /opt/homebrew/Cellar/qt/6.7.3/lib/QtGui.framework/Versions/A/Headers/qwindowdefs.h:
 
@@ -1814,8 +1861,6 @@ orderbook_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/MacOSX14.4
 /opt/homebrew/Cellar/qt/6.7.3/lib/QtGui.framework/Versions/A/Headers/qscreen.h:
 
 /opt/homebrew/Cellar/qt/6.7.3/lib/QtGui.framework/Versions/A/Headers/qrgba64.h:
-
-/opt/homebrew/Cellar/qt/6.7.3/lib/QtGui.framework/Versions/A/Headers/qpixmap.h:
 
 /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake:
 
@@ -1852,8 +1897,6 @@ orderbook_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/MacOSX14.4
 /opt/homebrew/Cellar/qt/6.7.3/lib/QtGui.framework/Versions/A/Headers/qaction.h:
 
 /opt/homebrew/Cellar/qt/6.7.3/lib/QtGui.framework/Versions/A/Headers/QTransform:
-
-/opt/homebrew/Cellar/qt/6.7.3/lib/QtGui.framework/Versions/A/Headers/QPainter:
 
 /opt/homebrew/opt/qt@6/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessTargets.cmake:
 
@@ -1985,6 +2028,10 @@ orderbook_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/MacOSX14.4
 
 /opt/homebrew/Cellar/qt/6.7.3/lib/QtCore.framework/Versions/A/Headers/qlatin1stringview.h:
 
+/opt/homebrew/Cellar/qt/6.7.3/lib/QtGui.framework/Versions/A/Headers/qpixmap.h:
+
+/opt/homebrew/Cellar/qt/6.7.3/lib/QtCore.framework/Versions/A/Headers/qitemselectionmodel.h:
+
 /opt/homebrew/Cellar/qt/6.7.3/lib/QtCore.framework/Versions/A/Headers/qiodevicebase.h:
 
 /opt/homebrew/Cellar/qt/6.7.3/lib/QtCore.framework/Versions/A/Headers/qhashfunctions.h:
@@ -2083,6 +2130,12 @@ orderbook_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/MacOSX14.4
 
 /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/qchartglobal.h:
 
+/opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/qcategoryaxis.h:
+
+/opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/qcandlestickset.h:
+
+/opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/qcandlestickseries.h:
+
 /opt/homebrew/opt/qt@6/lib/cmake/Qt6DBus/Qt6DBusDependencies.cmake:
 
 /opt/homebrew/Cellar/qt/6.7.3/lib/QtCore.framework/Versions/A/Headers/qforeach.h:
@@ -2092,6 +2145,8 @@ orderbook_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/MacOSX14.4
 /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/QLineSeries:
 
 /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/QChart:
+
+/opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/QCategoryAxis:
 
 /Users/hamza/orderbook-project/frontend/mainwindow.h:
 
@@ -2228,6 +2283,8 @@ CMakeFiles/3.31.5/CMakeSystem.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__debug_utils/strict_weak_ordering_check.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/string_view:
+
+/opt/homebrew/lib/cmake/fmt/fmt-config.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/replace_copy.h:
 
@@ -2619,8 +2676,6 @@ CMakeFiles/3.31.5/CMakeSystem.cmake:
 
 /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/QAbstractAxis:
 
-/Users/hamza/orderbook-project/frontend/chart_widget.cpp:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_core_convertible.h:
 
 /opt/homebrew/opt/qt@6/lib/cmake/Qt6Core/Qt6QDarwinBluetoothPermissionPluginConfig.cmake:
@@ -2652,6 +2707,8 @@ CMakeFiles/3.31.5/CMakeSystem.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__tuple/pair_like.h:
 
 /opt/homebrew/Cellar/qt/6.7.3/lib/QtCore.framework/Versions/A/Headers/qtmetamacros.h:
+
+/opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/QValueAxis:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__tuple/make_tuple_types.h:
 
@@ -2856,6 +2913,8 @@ CMakeFiles/3.31.5/CMakeSystem.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/strip_signature.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__memory/ranges_uninitialized_algorithms.h:
+
+/opt/homebrew/lib/cmake/fmt/fmt-config-version.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/system_error:
 
@@ -3151,6 +3210,8 @@ CMakeFiles/3.31.5/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__format/formatter.h:
 
+/opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/QCandlestickSeries:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_u_short.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__format/format_to_n_result.h:
@@ -3203,6 +3264,8 @@ CMakeFiles/3.31.5/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/is_partitioned.h:
 
+/opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qabstractitemview.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_reference_wrapper.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/list:
@@ -3224,6 +3287,8 @@ CMakeFiles/3.31.5/CMakeCXXCompiler.cmake:
 /opt/homebrew/share/cmake/Modules/Compiler/GNU.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__concepts/common_with.h:
+
+/opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/QTableWidget:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__format/concepts.h:
 
@@ -3295,8 +3360,6 @@ CMakeFiles/3.31.5/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/year.h:
 
-/opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/QVBoxLayout:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__fwd/sstream.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__condition_variable/condition_variable.h:
@@ -3306,6 +3369,8 @@ CMakeFiles/3.31.5/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/time_point.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__iterator/indirectly_comparable.h:
+
+/opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/QCandlestickSet:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/pstl_backends/cpu_backends/merge.h:
 
@@ -3324,6 +3389,8 @@ CMakeFiles/3.31.5/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__atomic/cxx_atomic_impl.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__bit/countl.h:
+
+/opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/QSplitter:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/monthday.h:
 
@@ -3783,6 +3850,8 @@ orderbook_autogen/moc_predefs.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/find.h:
 
+/opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qtablewidget.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/xlocale.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/cmath:
@@ -3953,6 +4022,8 @@ orderbook_autogen/moc_predefs.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/sort.h:
 
+/opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/QFormLayout:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/copy_n.h:
 
 /opt/homebrew/opt/qt@6/lib/cmake/Qt6Gui/Qt6QMacHeifPluginTargets-release.cmake:
@@ -4037,11 +4108,15 @@ orderbook_autogen/moc_predefs.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/in_out_out_result.h:
 
+/opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qprogressbar.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/wchar.h:
 
 /opt/homebrew/share/cmake/Modules/CMakeCXXInformation.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__format/formatter_output.h:
+
+/opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qgroupbox.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/pstl_for_each.h:
 
@@ -4078,8 +4153,6 @@ orderbook_autogen/moc_predefs.h:
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__bit/byteswap.h:
 
 /opt/homebrew/Cellar/qt/6.7.3/lib/QtCore.framework/Versions/A/Headers/qstringalgorithms.h:
-
-/Users/hamza/orderbook-project/frontend/chart_widget.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/none_of.h:
 
@@ -4244,6 +4317,8 @@ orderbook_autogen/moc_predefs.h:
 /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/qlineseries.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_types/_nl_item.h:
+
+/opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/qvalueaxis.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/fill_n.h:
 

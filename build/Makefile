@@ -203,30 +203,6 @@ backend/orderbook.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderbook.dir/build.make CMakeFiles/orderbook.dir/backend/orderbook.cpp.s
 .PHONY : backend/orderbook.cpp.s
 
-frontend/chart_widget.o: frontend/chart_widget.cpp.o
-.PHONY : frontend/chart_widget.o
-
-# target to build an object file
-frontend/chart_widget.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderbook.dir/build.make CMakeFiles/orderbook.dir/frontend/chart_widget.cpp.o
-.PHONY : frontend/chart_widget.cpp.o
-
-frontend/chart_widget.i: frontend/chart_widget.cpp.i
-.PHONY : frontend/chart_widget.i
-
-# target to preprocess a source file
-frontend/chart_widget.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderbook.dir/build.make CMakeFiles/orderbook.dir/frontend/chart_widget.cpp.i
-.PHONY : frontend/chart_widget.cpp.i
-
-frontend/chart_widget.s: frontend/chart_widget.cpp.s
-.PHONY : frontend/chart_widget.s
-
-# target to generate assembly for a file
-frontend/chart_widget.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderbook.dir/build.make CMakeFiles/orderbook.dir/frontend/chart_widget.cpp.s
-.PHONY : frontend/chart_widget.cpp.s
-
 frontend/mainwindow.o: frontend/mainwindow.cpp.o
 .PHONY : frontend/mainwindow.o
 
@@ -316,9 +292,6 @@ help:
 	@echo "... backend/orderbook.o"
 	@echo "... backend/orderbook.i"
 	@echo "... backend/orderbook.s"
-	@echo "... frontend/chart_widget.o"
-	@echo "... frontend/chart_widget.i"
-	@echo "... frontend/chart_widget.s"
 	@echo "... frontend/mainwindow.o"
 	@echo "... frontend/mainwindow.i"
 	@echo "... frontend/mainwindow.s"

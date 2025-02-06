@@ -1138,6 +1138,15 @@ CMakeFiles/orderbook.dir/frontend/mainwindow.cpp.o: \
   /opt/homebrew/opt/qt@6/lib/QtCharts.framework/Headers/qxyseries.h \
   /opt/homebrew/opt/qt@6/include/QtGui/QImage \
   /opt/homebrew/opt/qt@6/lib/QtGui.framework/Headers/qimage.h \
+  /opt/homebrew/opt/qt@6/include/QtCharts/QCandlestickSeries \
+  /opt/homebrew/opt/qt@6/lib/QtCharts.framework/Headers/qcandlestickseries.h \
+  /opt/homebrew/opt/qt@6/include/QtCharts/QCandlestickSet \
+  /opt/homebrew/opt/qt@6/lib/QtCharts.framework/Headers/qcandlestickset.h \
+  /opt/homebrew/opt/qt@6/include/QtCharts/qchartglobal.h \
+  /opt/homebrew/opt/qt@6/include/QtCharts/QCategoryAxis \
+  /opt/homebrew/opt/qt@6/lib/QtCharts.framework/Headers/qcategoryaxis.h \
+  /opt/homebrew/opt/qt@6/include/QtCharts/QValueAxis \
+  /opt/homebrew/opt/qt@6/lib/QtCharts.framework/Headers/qvalueaxis.h \
   /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QPushButton \
   /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qpushbutton.h \
   /opt/homebrew/opt/qt@6/include/QtWidgets/qabstractbutton.h \
@@ -1159,16 +1168,28 @@ CMakeFiles/orderbook.dir/frontend/mainwindow.cpp.o: \
   /opt/homebrew/opt/qt@6/include/QtWidgets/qtabbar.h \
   /opt/homebrew/opt/qt@6/include/QtWidgets/qrubberband.h \
   /opt/homebrew/opt/qt@6/include/QtCore/qabstractitemmodel.h \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QGroupBox \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qgroupbox.h \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QFormLayout \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qformlayout.h \
+  /opt/homebrew/opt/qt@6/include/QtWidgets/QLayout \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qlayout.h \
+  /opt/homebrew/opt/qt@6/include/QtWidgets/qlayoutitem.h \
+  /opt/homebrew/opt/qt@6/include/QtWidgets/qboxlayout.h \
+  /opt/homebrew/opt/qt@6/include/QtWidgets/qlayout.h \
+  /opt/homebrew/opt/qt@6/include/QtWidgets/qgridlayout.h \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QSplitter \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qsplitter.h \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QTableWidget \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qtablewidget.h \
+  /opt/homebrew/opt/qt@6/include/QtWidgets/qtableview.h \
+  /opt/homebrew/opt/qt@6/include/QtWidgets/qabstractitemview.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/qitemselectionmodel.h \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QProgressBar \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qprogressbar.h \
   /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QLabel \
   /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qlabel.h \
   /opt/homebrew/opt/qt@6/include/QtGui/qpicture.h \
-  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QVBoxLayout \
-  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qboxlayout.h \
-  /opt/homebrew/opt/qt@6/include/QtWidgets/qlayout.h \
-  /opt/homebrew/opt/qt@6/include/QtWidgets/qlayoutitem.h \
-  /opt/homebrew/opt/qt@6/include/QtWidgets/qboxlayout.h \
-  /opt/homebrew/opt/qt@6/include/QtWidgets/qgridlayout.h \
-  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QHBoxLayout \
   /Users/hamza/orderbook-project/backend/matching_engine.h \
   /Users/hamza/orderbook-project/backend/orderbook.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/queue \
@@ -1187,6 +1208,9 @@ CMakeFiles/orderbook.dir/frontend/mainwindow.cpp.o: \
   /opt/homebrew/opt/qt@6/include/QtCore/qcalendar.h \
   /opt/homebrew/opt/qt@6/lib/QtCore.framework/Headers/QDebug \
   /opt/homebrew/opt/qt@6/lib/QtCore.framework/Headers/qdebug.h \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QHBoxLayout \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qboxlayout.h \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QVBoxLayout \
   /opt/homebrew/opt/qt@6/lib/QtCore.framework/Headers/QRandomGenerator \
   /opt/homebrew/opt/qt@6/lib/QtCore.framework/Headers/qrandom.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/random \
@@ -1222,4 +1246,10 @@ CMakeFiles/orderbook.dir/frontend/mainwindow.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/subtract_with_carry_engine.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/seed_seq.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/student_t_distribution.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/weibull_distribution.h
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/weibull_distribution.h \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QStatusBar \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qstatusbar.h \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QToolTip \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qtooltip.h \
+  /opt/homebrew/opt/qt@6/lib/QtGui.framework/Headers/QCursor \
+  /opt/homebrew/opt/qt@6/lib/QtGui.framework/Headers/qcursor.h

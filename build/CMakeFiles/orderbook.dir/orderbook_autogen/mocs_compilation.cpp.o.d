@@ -1,13 +1,11 @@
 CMakeFiles/orderbook.dir/orderbook_autogen/mocs_compilation.cpp.o: \
   /Users/hamza/orderbook-project/build/orderbook_autogen/mocs_compilation.cpp \
-  /Users/hamza/orderbook-project/build/orderbook_autogen/W4B5VDZ4WS/moc_chart_widget.cpp \
-  /Users/hamza/orderbook-project/build/orderbook_autogen/W4B5VDZ4WS/../../../frontend/chart_widget.h \
-  /opt/homebrew/opt/qt@6/include/QtCharts/QChartView \
-  /opt/homebrew/opt/qt@6/lib/QtCharts.framework/Headers/qchartview.h \
-  /opt/homebrew/opt/qt@6/include/QtCharts/QAbstractAxis \
-  /opt/homebrew/opt/qt@6/lib/QtCharts.framework/Headers/qabstractaxis.h \
-  /opt/homebrew/opt/qt@6/include/QtCharts/QChartGlobal \
-  /opt/homebrew/opt/qt@6/lib/QtCharts.framework/Headers/qchartglobal.h \
+  /Users/hamza/orderbook-project/build/orderbook_autogen/W4B5VDZ4WS/moc_mainwindow.cpp \
+  /Users/hamza/orderbook-project/build/orderbook_autogen/W4B5VDZ4WS/../../../frontend/mainwindow.h \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QMainWindow \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qmainwindow.h \
+  /opt/homebrew/opt/qt@6/include/QtWidgets/qtwidgetsglobal.h \
+  /opt/homebrew/opt/qt@6/include/QtGui/qtguiglobal.h \
   /opt/homebrew/opt/qt@6/include/QtCore/qglobal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/type_traits \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__assert \
@@ -540,12 +538,18 @@ CMakeFiles/orderbook.dir/orderbook_autogen/mocs_compilation.cpp.o: \
   /opt/homebrew/opt/qt@6/include/QtCore/qtresource.h \
   /opt/homebrew/opt/qt@6/include/QtCore/qttranslation.h \
   /opt/homebrew/opt/qt@6/include/QtCore/qversiontagging.h \
-  /opt/homebrew/opt/qt@6/include/QtCharts/qtcharts-config.h \
-  /opt/homebrew/opt/qt@6/include/QtCharts/qtchartsexports.h \
-  /opt/homebrew/opt/qt@6/include/QtGui/QPen \
-  /opt/homebrew/opt/qt@6/lib/QtGui.framework/Headers/qpen.h \
-  /opt/homebrew/opt/qt@6/include/QtCore/qshareddata.h \
-  /opt/homebrew/opt/qt@6/include/QtCore/qhashfunctions.h \
+  /opt/homebrew/opt/qt@6/include/QtGui/qtgui-config.h \
+  /opt/homebrew/opt/qt@6/include/QtGui/qtguiexports.h \
+  /opt/homebrew/opt/qt@6/include/QtWidgets/qtwidgets-config.h \
+  /opt/homebrew/opt/qt@6/include/QtWidgets/qtwidgetsexports.h \
+  /opt/homebrew/opt/qt@6/include/QtWidgets/qwidget.h \
+  /opt/homebrew/opt/qt@6/include/QtGui/qwindowdefs.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/qobjectdefs.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/qnamespace.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/qtmetamacros.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/qobjectdefs_impl.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/qfunctionaltools_impl.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/qobject.h \
   /opt/homebrew/opt/qt@6/include/QtCore/qstring.h \
   /opt/homebrew/opt/qt@6/include/QtCore/qchar.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/functional \
@@ -939,8 +943,6 @@ CMakeFiles/orderbook.dir/orderbook_autogen/mocs_compilation.cpp.o: \
   /opt/homebrew/opt/qt@6/include/QtCore/qstringview.h \
   /opt/homebrew/opt/qt@6/include/QtCore/qbytearray.h \
   /opt/homebrew/opt/qt@6/include/QtCore/qrefcount.h \
-  /opt/homebrew/opt/qt@6/include/QtCore/qnamespace.h \
-  /opt/homebrew/opt/qt@6/include/QtCore/qtmetamacros.h \
   /opt/homebrew/opt/qt@6/include/QtCore/qarraydata.h \
   /opt/homebrew/opt/qt@6/include/QtCore/qpair.h \
   /opt/homebrew/opt/qt@6/include/QtCore/qarraydatapointer.h \
@@ -962,6 +964,8 @@ CMakeFiles/orderbook.dir/orderbook_autogen/mocs_compilation.cpp.o: \
   /opt/homebrew/opt/qt@6/include/QtCore/qstringbuilder.h \
   /opt/homebrew/opt/qt@6/include/QtCore/qstringconverter.h \
   /opt/homebrew/opt/qt@6/include/QtCore/qstringconverter_base.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/qlist.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/qhashfunctions.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/numeric \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__numeric/accumulate.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__numeric/adjacent_difference.h \
@@ -975,49 +979,19 @@ CMakeFiles/orderbook.dir/orderbook_autogen/mocs_compilation.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__numeric/pstl_reduce.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__numeric/transform_exclusive_scan.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__numeric/transform_inclusive_scan.h \
-  /opt/homebrew/opt/qt@6/include/QtGui/qtguiglobal.h \
-  /opt/homebrew/opt/qt@6/include/QtGui/qtgui-config.h \
-  /opt/homebrew/opt/qt@6/include/QtGui/qtguiexports.h \
-  /opt/homebrew/opt/qt@6/include/QtGui/qcolor.h \
-  /opt/homebrew/opt/qt@6/include/QtGui/qrgb.h \
-  /opt/homebrew/opt/qt@6/include/QtCore/qstringlist.h \
-  /opt/homebrew/opt/qt@6/include/QtCore/qlist.h \
   /opt/homebrew/opt/qt@6/include/QtCore/qiterator.h \
   /opt/homebrew/opt/qt@6/include/QtCore/qbytearraylist.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/qstringlist.h \
   /opt/homebrew/opt/qt@6/include/QtCore/qalgorithms.h \
   /opt/homebrew/opt/qt@6/include/QtCore/qstringmatcher.h \
-  /opt/homebrew/opt/qt@6/include/QtGui/qrgba64.h \
-  /opt/homebrew/opt/qt@6/include/QtGui/qbrush.h \
-  /opt/homebrew/opt/qt@6/include/QtCore/qpoint.h \
-  /opt/homebrew/opt/qt@6/include/QtCore/q23utility.h \
   /opt/homebrew/opt/qt@6/include/QtCore/qscopedpointer.h \
-  /opt/homebrew/opt/qt@6/include/QtGui/qimage.h \
-  /opt/homebrew/opt/qt@6/include/QtGui/qpaintdevice.h \
-  /opt/homebrew/opt/qt@6/include/QtGui/qwindowdefs.h \
-  /opt/homebrew/opt/qt@6/include/QtCore/qobjectdefs.h \
-  /opt/homebrew/opt/qt@6/include/QtCore/qobjectdefs_impl.h \
-  /opt/homebrew/opt/qt@6/include/QtCore/qfunctionaltools_impl.h \
-  /opt/homebrew/opt/qt@6/include/QtCore/qrect.h \
-  /opt/homebrew/opt/qt@6/include/QtCore/qmargins.h \
-  /opt/homebrew/opt/qt@6/include/QtCore/qsize.h \
-  /opt/homebrew/opt/qt@6/include/QtGui/qpixelformat.h \
-  /opt/homebrew/opt/qt@6/include/QtGui/qtransform.h \
-  /opt/homebrew/opt/qt@6/include/QtGui/qpolygon.h \
-  /opt/homebrew/opt/qt@6/include/QtGui/qregion.h \
-  /opt/homebrew/opt/qt@6/include/QtCore/qdatastream.h \
-  /opt/homebrew/opt/qt@6/include/QtCore/qiodevicebase.h \
-  /opt/homebrew/opt/qt@6/include/QtCore/qline.h \
-  /opt/homebrew/opt/qt@6/include/QtGui/qpixmap.h \
-  /opt/homebrew/opt/qt@6/include/QtGui/QFont \
-  /opt/homebrew/opt/qt@6/lib/QtGui.framework/Headers/qfont.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/qmetatype.h \
   /opt/homebrew/opt/qt@6/include/QtCore/qcompare.h \
   /opt/homebrew/opt/qt@6/include/QtCore/qcomparehelpers.h \
-  /opt/homebrew/opt/qt@6/include/QtCore/qendian.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/qdatastream.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/qiodevicebase.h \
   /opt/homebrew/opt/qt@6/include/QtCore/qfloat16.h \
   /opt/homebrew/opt/qt@6/include/QtCore/qmath.h \
-  /opt/homebrew/opt/qt@6/include/QtCore/QVariant \
-  /opt/homebrew/opt/qt@6/lib/QtCore.framework/Headers/qvariant.h \
-  /opt/homebrew/opt/qt@6/include/QtCore/qmetatype.h \
   /opt/homebrew/opt/qt@6/include/QtCore/qiterable.h \
   /opt/homebrew/opt/qt@6/include/QtCore/qmetacontainer.h \
   /opt/homebrew/opt/qt@6/include/QtCore/qcontainerinfo.h \
@@ -1026,11 +1000,8 @@ CMakeFiles/orderbook.dir/orderbook_autogen/mocs_compilation.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/list \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/map \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__tree \
-  /opt/homebrew/opt/qt@6/include/QtCore/qdebug.h \
-  /opt/homebrew/opt/qt@6/include/QtCore/qtextstream.h \
-  /opt/homebrew/opt/qt@6/include/QtCore/qcontiguouscache.h \
-  /opt/homebrew/opt/qt@6/include/QtCore/qsharedpointer.h \
-  /opt/homebrew/opt/qt@6/include/QtCore/qsharedpointer_impl.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/qobject_impl.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/qbindingstorage.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/chrono \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/calendar.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/convert_to_tm.h \
@@ -1048,14 +1019,64 @@ CMakeFiles/orderbook.dir/orderbook_autogen/mocs_compilation.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/year_month_day.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/year_month_weekday.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__chrono/literals.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/qmargins.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/q23utility.h \
+  /opt/homebrew/opt/qt@6/include/QtGui/qaction.h \
+  /opt/homebrew/opt/qt@6/include/QtGui/qkeysequence.h \
+  /opt/homebrew/opt/qt@6/include/QtGui/qicon.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/qsize.h \
+  /opt/homebrew/opt/qt@6/include/QtGui/qpixmap.h \
+  /opt/homebrew/opt/qt@6/include/QtGui/qpaintdevice.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/qrect.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/qpoint.h \
+  /opt/homebrew/opt/qt@6/include/QtGui/qcolor.h \
+  /opt/homebrew/opt/qt@6/include/QtGui/qrgb.h \
+  /opt/homebrew/opt/qt@6/include/QtGui/qrgba64.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/qshareddata.h \
+  /opt/homebrew/opt/qt@6/include/QtGui/qimage.h \
+  /opt/homebrew/opt/qt@6/include/QtGui/qpixelformat.h \
+  /opt/homebrew/opt/qt@6/include/QtGui/qtransform.h \
+  /opt/homebrew/opt/qt@6/include/QtGui/qpolygon.h \
+  /opt/homebrew/opt/qt@6/include/QtGui/qregion.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/qline.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/qvariant.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/qdebug.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/qtextstream.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/qcontiguouscache.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/qsharedpointer.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/qsharedpointer_impl.h \
   /opt/homebrew/opt/qt@6/include/QtCore/qmap.h \
   /opt/homebrew/opt/qt@6/include/QtCore/qshareddata_impl.h \
   /opt/homebrew/opt/qt@6/include/QtCore/qset.h \
   /opt/homebrew/opt/qt@6/include/QtCore/qhash.h \
   /opt/homebrew/opt/qt@6/include/QtCore/qvarlengtharray.h \
-  /opt/homebrew/opt/qt@6/include/QtCore/qobject.h \
-  /opt/homebrew/opt/qt@6/include/QtCore/qobject_impl.h \
-  /opt/homebrew/opt/qt@6/include/QtCore/qbindingstorage.h \
+  /opt/homebrew/opt/qt@6/include/QtGui/qpalette.h \
+  /opt/homebrew/opt/qt@6/include/QtGui/qbrush.h \
+  /opt/homebrew/opt/qt@6/include/QtGui/qfont.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/qendian.h \
+  /opt/homebrew/opt/qt@6/include/QtGui/qfontmetrics.h \
+  /opt/homebrew/opt/qt@6/include/QtGui/qfontinfo.h \
+  /opt/homebrew/opt/qt@6/include/QtWidgets/qsizepolicy.h \
+  /opt/homebrew/opt/qt@6/include/QtGui/qcursor.h \
+  /opt/homebrew/opt/qt@6/include/QtGui/qbitmap.h \
+  /opt/homebrew/opt/qt@6/include/QtWidgets/qtabwidget.h \
+  /opt/homebrew/opt/qt@6/lib/QtCore.framework/Headers/QTimer \
+  /opt/homebrew/opt/qt@6/lib/QtCore.framework/Headers/qtimer.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/qbasictimer.h \
+  /opt/homebrew/opt/qt@6/include/QtCharts/QChartView \
+  /opt/homebrew/opt/qt@6/lib/QtCharts.framework/Headers/qchartview.h \
+  /opt/homebrew/opt/qt@6/include/QtCharts/QAbstractAxis \
+  /opt/homebrew/opt/qt@6/lib/QtCharts.framework/Headers/qabstractaxis.h \
+  /opt/homebrew/opt/qt@6/include/QtCharts/QChartGlobal \
+  /opt/homebrew/opt/qt@6/lib/QtCharts.framework/Headers/qchartglobal.h \
+  /opt/homebrew/opt/qt@6/include/QtCharts/qtcharts-config.h \
+  /opt/homebrew/opt/qt@6/include/QtCharts/qtchartsexports.h \
+  /opt/homebrew/opt/qt@6/include/QtGui/QPen \
+  /opt/homebrew/opt/qt@6/lib/QtGui.framework/Headers/qpen.h \
+  /opt/homebrew/opt/qt@6/include/QtGui/QFont \
+  /opt/homebrew/opt/qt@6/lib/QtGui.framework/Headers/qfont.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/QVariant \
+  /opt/homebrew/opt/qt@6/lib/QtCore.framework/Headers/qvariant.h \
   /opt/homebrew/opt/qt@6/include/QtCore/QObject \
   /opt/homebrew/opt/qt@6/lib/QtCore.framework/Headers/qobject.h \
   /opt/homebrew/opt/qt@6/include/QtCharts/QAbstractSeries \
@@ -1066,16 +1087,7 @@ CMakeFiles/orderbook.dir/orderbook_autogen/mocs_compilation.cpp.o: \
   /opt/homebrew/opt/qt@6/lib/QtCharts.framework/Headers/qlegend.h \
   /opt/homebrew/opt/qt@6/include/QtWidgets/QGraphicsWidget \
   /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qgraphicswidget.h \
-  /opt/homebrew/opt/qt@6/include/QtWidgets/qtwidgetsglobal.h \
-  /opt/homebrew/opt/qt@6/include/QtWidgets/qtwidgets-config.h \
-  /opt/homebrew/opt/qt@6/include/QtWidgets/qtwidgetsexports.h \
-  /opt/homebrew/opt/qt@6/include/QtGui/qfont.h \
-  /opt/homebrew/opt/qt@6/include/QtGui/qaction.h \
-  /opt/homebrew/opt/qt@6/include/QtGui/qkeysequence.h \
-  /opt/homebrew/opt/qt@6/include/QtGui/qicon.h \
-  /opt/homebrew/opt/qt@6/include/QtCore/qvariant.h \
   /opt/homebrew/opt/qt@6/include/QtWidgets/qgraphicslayoutitem.h \
-  /opt/homebrew/opt/qt@6/include/QtWidgets/qsizepolicy.h \
   /opt/homebrew/opt/qt@6/include/QtGui/qevent.h \
   /opt/homebrew/opt/qt@6/include/QtCore/qcoreevent.h \
   /opt/homebrew/opt/qt@6/include/QtCore/qiodevice.h \
@@ -1108,7 +1120,6 @@ CMakeFiles/orderbook.dir/orderbook_autogen/mocs_compilation.cpp.o: \
   /opt/homebrew/opt/qt@6/include/QtGui/qguiapplication_platform.h \
   /opt/homebrew/opt/qt@6/include/QtWidgets/qgraphicsitem.h \
   /opt/homebrew/opt/qt@6/include/QtGui/qpainterpath.h \
-  /opt/homebrew/opt/qt@6/include/QtGui/qpalette.h \
   /opt/homebrew/opt/qt@6/include/QtGui/QBrush \
   /opt/homebrew/opt/qt@6/lib/QtGui.framework/Headers/qbrush.h \
   /opt/homebrew/opt/qt@6/include/QtCore/QMargins \
@@ -1118,32 +1129,25 @@ CMakeFiles/orderbook.dir/orderbook_autogen/mocs_compilation.cpp.o: \
   /opt/homebrew/opt/qt@6/include/QtGui/qpainter.h \
   /opt/homebrew/opt/qt@6/include/QtGui/qtextoption.h \
   /opt/homebrew/opt/qt@6/include/QtGui/qpen.h \
-  /opt/homebrew/opt/qt@6/include/QtGui/qfontinfo.h \
-  /opt/homebrew/opt/qt@6/include/QtGui/qfontmetrics.h \
   /opt/homebrew/opt/qt@6/include/QtWidgets/qscrollarea.h \
   /opt/homebrew/opt/qt@6/include/QtWidgets/qabstractscrollarea.h \
   /opt/homebrew/opt/qt@6/include/QtWidgets/qframe.h \
-  /opt/homebrew/opt/qt@6/include/QtWidgets/qwidget.h \
-  /opt/homebrew/opt/qt@6/include/QtGui/qcursor.h \
-  /opt/homebrew/opt/qt@6/include/QtGui/qbitmap.h \
   /opt/homebrew/opt/qt@6/include/QtWidgets/qgraphicsscene.h \
-  /opt/homebrew/opt/qt@6/lib/QtGui.framework/Headers/QPainter \
-  /opt/homebrew/opt/qt@6/lib/QtGui.framework/Headers/qpainter.h \
-  /opt/homebrew/opt/qt@6/include/QtCore/qtmochelpers.h \
-  /Users/hamza/orderbook-project/build/orderbook_autogen/W4B5VDZ4WS/moc_mainwindow.cpp \
-  /Users/hamza/orderbook-project/build/orderbook_autogen/W4B5VDZ4WS/../../../frontend/mainwindow.h \
-  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QMainWindow \
-  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qmainwindow.h \
-  /opt/homebrew/opt/qt@6/include/QtWidgets/qtabwidget.h \
-  /opt/homebrew/opt/qt@6/lib/QtCore.framework/Headers/QTimer \
-  /opt/homebrew/opt/qt@6/lib/QtCore.framework/Headers/qtimer.h \
-  /opt/homebrew/opt/qt@6/include/QtCore/qbasictimer.h \
   /opt/homebrew/opt/qt@6/include/QtCharts/QLineSeries \
   /opt/homebrew/opt/qt@6/lib/QtCharts.framework/Headers/qlineseries.h \
   /opt/homebrew/opt/qt@6/include/QtCharts/QXYSeries \
   /opt/homebrew/opt/qt@6/lib/QtCharts.framework/Headers/qxyseries.h \
   /opt/homebrew/opt/qt@6/include/QtGui/QImage \
   /opt/homebrew/opt/qt@6/lib/QtGui.framework/Headers/qimage.h \
+  /opt/homebrew/opt/qt@6/include/QtCharts/QCandlestickSeries \
+  /opt/homebrew/opt/qt@6/lib/QtCharts.framework/Headers/qcandlestickseries.h \
+  /opt/homebrew/opt/qt@6/include/QtCharts/QCandlestickSet \
+  /opt/homebrew/opt/qt@6/lib/QtCharts.framework/Headers/qcandlestickset.h \
+  /opt/homebrew/opt/qt@6/include/QtCharts/qchartglobal.h \
+  /opt/homebrew/opt/qt@6/include/QtCharts/QCategoryAxis \
+  /opt/homebrew/opt/qt@6/lib/QtCharts.framework/Headers/qcategoryaxis.h \
+  /opt/homebrew/opt/qt@6/include/QtCharts/QValueAxis \
+  /opt/homebrew/opt/qt@6/lib/QtCharts.framework/Headers/qvalueaxis.h \
   /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QPushButton \
   /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qpushbutton.h \
   /opt/homebrew/opt/qt@6/include/QtWidgets/qabstractbutton.h \
@@ -1165,13 +1169,26 @@ CMakeFiles/orderbook.dir/orderbook_autogen/mocs_compilation.cpp.o: \
   /opt/homebrew/opt/qt@6/include/QtWidgets/qtabbar.h \
   /opt/homebrew/opt/qt@6/include/QtWidgets/qrubberband.h \
   /opt/homebrew/opt/qt@6/include/QtCore/qabstractitemmodel.h \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QGroupBox \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qgroupbox.h \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QFormLayout \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qformlayout.h \
+  /opt/homebrew/opt/qt@6/include/QtWidgets/QLayout \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qlayout.h \
+  /opt/homebrew/opt/qt@6/include/QtWidgets/qlayoutitem.h \
+  /opt/homebrew/opt/qt@6/include/QtWidgets/qboxlayout.h \
+  /opt/homebrew/opt/qt@6/include/QtWidgets/qlayout.h \
+  /opt/homebrew/opt/qt@6/include/QtWidgets/qgridlayout.h \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QSplitter \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qsplitter.h \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QTableWidget \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qtablewidget.h \
+  /opt/homebrew/opt/qt@6/include/QtWidgets/qtableview.h \
+  /opt/homebrew/opt/qt@6/include/QtWidgets/qabstractitemview.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/qitemselectionmodel.h \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QProgressBar \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qprogressbar.h \
   /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QLabel \
   /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qlabel.h \
   /opt/homebrew/opt/qt@6/include/QtGui/qpicture.h \
-  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QVBoxLayout \
-  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qboxlayout.h \
-  /opt/homebrew/opt/qt@6/include/QtWidgets/qlayout.h \
-  /opt/homebrew/opt/qt@6/include/QtWidgets/qlayoutitem.h \
-  /opt/homebrew/opt/qt@6/include/QtWidgets/qboxlayout.h \
-  /opt/homebrew/opt/qt@6/include/QtWidgets/qgridlayout.h \
-  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QHBoxLayout
+  /opt/homebrew/opt/qt@6/include/QtCore/qtmochelpers.h

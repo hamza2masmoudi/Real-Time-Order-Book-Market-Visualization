@@ -6,8 +6,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/orderbook.dir/backend/matching_engine.cpp.o.d"
   "CMakeFiles/orderbook.dir/backend/orderbook.cpp.o"
   "CMakeFiles/orderbook.dir/backend/orderbook.cpp.o.d"
-  "CMakeFiles/orderbook.dir/frontend/chart_widget.cpp.o"
-  "CMakeFiles/orderbook.dir/frontend/chart_widget.cpp.o.d"
   "CMakeFiles/orderbook.dir/frontend/mainwindow.cpp.o"
   "CMakeFiles/orderbook.dir/frontend/mainwindow.cpp.o.d"
   "CMakeFiles/orderbook.dir/main.cpp.o"

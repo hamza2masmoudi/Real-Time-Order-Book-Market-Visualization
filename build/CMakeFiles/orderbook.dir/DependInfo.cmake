@@ -11,7 +11,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "orderbook_autogen/timestamp" "custom" "orderbook_autogen/deps"
   "/Users/hamza/orderbook-project/backend/matching_engine.cpp" "CMakeFiles/orderbook.dir/backend/matching_engine.cpp.o" "gcc" "CMakeFiles/orderbook.dir/backend/matching_engine.cpp.o.d"
   "/Users/hamza/orderbook-project/backend/orderbook.cpp" "CMakeFiles/orderbook.dir/backend/orderbook.cpp.o" "gcc" "CMakeFiles/orderbook.dir/backend/orderbook.cpp.o.d"
-  "/Users/hamza/orderbook-project/frontend/chart_widget.cpp" "CMakeFiles/orderbook.dir/frontend/chart_widget.cpp.o" "gcc" "CMakeFiles/orderbook.dir/frontend/chart_widget.cpp.o.d"
   "/Users/hamza/orderbook-project/frontend/mainwindow.cpp" "CMakeFiles/orderbook.dir/frontend/mainwindow.cpp.o" "gcc" "CMakeFiles/orderbook.dir/frontend/mainwindow.cpp.o.d"
   "/Users/hamza/orderbook-project/main.cpp" "CMakeFiles/orderbook.dir/main.cpp.o" "gcc" "CMakeFiles/orderbook.dir/main.cpp.o.d"
   "/Users/hamza/orderbook-project/build/orderbook_autogen/mocs_compilation.cpp" "CMakeFiles/orderbook.dir/orderbook_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/orderbook.dir/orderbook_autogen/mocs_compilation.cpp.o.d"

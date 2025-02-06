@@ -319,6 +319,9 @@ Vulkan_LIBRARY:FILEPATH=Vulkan_LIBRARY-NOTFOUND
 //Path to a library.
 WrapOpenGL_AGL:FILEPATH=/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/AGL.framework
 
+//The directory containing a CMake configuration file for fmt.
+fmt_DIR:PATH=/opt/homebrew/lib/cmake/fmt
+
 //Value Computed by CMake
 orderbook_BINARY_DIR:STATIC=/Users/hamza/orderbook-project/build
 
@@ -327,6 +330,9 @@ orderbook_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 orderbook_SOURCE_DIR:STATIC=/Users/hamza/orderbook-project
+
+//The directory containing a CMake configuration file for spdlog.
+spdlog_DIR:PATH=/opt/homebrew/lib/cmake/spdlog
 
 
 ########################

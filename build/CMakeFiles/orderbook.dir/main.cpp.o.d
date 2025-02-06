@@ -1140,6 +1140,15 @@ CMakeFiles/orderbook.dir/main.cpp.o: \
   /opt/homebrew/opt/qt@6/lib/QtCharts.framework/Headers/qxyseries.h \
   /opt/homebrew/opt/qt@6/include/QtGui/QImage \
   /opt/homebrew/opt/qt@6/lib/QtGui.framework/Headers/qimage.h \
+  /opt/homebrew/opt/qt@6/include/QtCharts/QCandlestickSeries \
+  /opt/homebrew/opt/qt@6/lib/QtCharts.framework/Headers/qcandlestickseries.h \
+  /opt/homebrew/opt/qt@6/include/QtCharts/QCandlestickSet \
+  /opt/homebrew/opt/qt@6/lib/QtCharts.framework/Headers/qcandlestickset.h \
+  /opt/homebrew/opt/qt@6/include/QtCharts/qchartglobal.h \
+  /opt/homebrew/opt/qt@6/include/QtCharts/QCategoryAxis \
+  /opt/homebrew/opt/qt@6/lib/QtCharts.framework/Headers/qcategoryaxis.h \
+  /opt/homebrew/opt/qt@6/include/QtCharts/QValueAxis \
+  /opt/homebrew/opt/qt@6/lib/QtCharts.framework/Headers/qvalueaxis.h \
   /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QPushButton \
   /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qpushbutton.h \
   /opt/homebrew/opt/qt@6/include/QtWidgets/qabstractbutton.h \
@@ -1161,13 +1170,25 @@ CMakeFiles/orderbook.dir/main.cpp.o: \
   /opt/homebrew/opt/qt@6/include/QtWidgets/qtabbar.h \
   /opt/homebrew/opt/qt@6/include/QtWidgets/qrubberband.h \
   /opt/homebrew/opt/qt@6/include/QtCore/qabstractitemmodel.h \
-  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QLabel \
-  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qlabel.h \
-  /opt/homebrew/opt/qt@6/include/QtGui/qpicture.h \
-  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QVBoxLayout \
-  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qboxlayout.h \
-  /opt/homebrew/opt/qt@6/include/QtWidgets/qlayout.h \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QGroupBox \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qgroupbox.h \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QFormLayout \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qformlayout.h \
+  /opt/homebrew/opt/qt@6/include/QtWidgets/QLayout \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qlayout.h \
   /opt/homebrew/opt/qt@6/include/QtWidgets/qlayoutitem.h \
   /opt/homebrew/opt/qt@6/include/QtWidgets/qboxlayout.h \
+  /opt/homebrew/opt/qt@6/include/QtWidgets/qlayout.h \
   /opt/homebrew/opt/qt@6/include/QtWidgets/qgridlayout.h \
-  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QHBoxLayout
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QSplitter \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qsplitter.h \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QTableWidget \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qtablewidget.h \
+  /opt/homebrew/opt/qt@6/include/QtWidgets/qtableview.h \
+  /opt/homebrew/opt/qt@6/include/QtWidgets/qabstractitemview.h \
+  /opt/homebrew/opt/qt@6/include/QtCore/qitemselectionmodel.h \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QProgressBar \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qprogressbar.h \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/QLabel \
+  /opt/homebrew/opt/qt@6/lib/QtWidgets.framework/Headers/qlabel.h \
+  /opt/homebrew/opt/qt@6/include/QtGui/qpicture.h

@@ -1,9 +1,12 @@
 #pragma once
+
 #include "orderbook.h"
 #include <queue>
 #include <atomic>
 #include <thread>
 #include <condition_variable>
+#include <chrono>
+#include <mutex>
 
 class MatchingEngine {
 public:
@@ -12,18 +15,35 @@ public:
 
     void start();
     void stop();
-    void submit_order(const Order& order);
+
+    // Accept by value so we can store submit_time
+    void submit_order(Order order);
+
     OrderBook& get_order_book();
-    uint64_t getProcessedOrderCount() const { return processedOrders.load(); }
+    uint64_t getProcessedOrderCount() const;
+
+    // Metrics
+    double getAverageLatencyMs() const;
+    double getThroughputOps() const;
 
 private:
     void matching_thread();
 
     OrderBook order_book;
-    std::atomic<bool> running{false};
+    std::atomic<bool> running;
     std::thread engine_thread;
+
     std::queue<Order> order_queue;
     std::mutex queue_mutex;
     std::condition_variable cv;
-    std::atomic<uint64_t> processedOrders{0};
+
+    // Basic stats
+    std::atomic<uint64_t> processedOrders;
+
+    // Store latency sums as an integer (millisecond sums) for atomic fetch_add
+    std::atomic<int64_t> totalLatencyMs;
+    std::atomic<uint64_t> totalLatencyCount;
+
+    // For throughput
+    std::chrono::steady_clock::time_point engineStartTime;
 };

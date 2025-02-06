@@ -442,7 +442,22 @@
 		"/opt/homebrew/opt/qt@6/lib/cmake/Qt6Charts/Qt6ChartsTargets.cmake",
 		"/opt/homebrew/opt/qt@6/lib/cmake/Qt6Charts/Qt6ChartsTargets-release.cmake",
 		"/opt/homebrew/opt/qt@6/lib/cmake/Qt6Charts/Qt6ChartsAdditionalTargetInfo.cmake",
-		"/opt/homebrew/opt/qt@6/lib/cmake/Qt6Charts/Qt6ChartsVersionlessTargets.cmake"
+		"/opt/homebrew/opt/qt@6/lib/cmake/Qt6Charts/Qt6ChartsVersionlessTargets.cmake",
+		"/opt/homebrew/lib/cmake/spdlog/spdlogConfigVersion.cmake",
+		"/opt/homebrew/lib/cmake/spdlog/spdlogConfig.cmake",
+		"/opt/homebrew/share/cmake/Modules/FindThreads.cmake",
+		"/opt/homebrew/share/cmake/Modules/CheckLibraryExists.cmake",
+		"/opt/homebrew/share/cmake/Modules/CheckIncludeFileCXX.cmake",
+		"/opt/homebrew/share/cmake/Modules/CheckCXXSourceCompiles.cmake",
+		"/opt/homebrew/share/cmake/Modules/FindPackageHandleStandardArgs.cmake",
+		"/opt/homebrew/share/cmake/Modules/FindPackageMessage.cmake",
+		"/opt/homebrew/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
+		"/opt/homebrew/lib/cmake/fmt/fmt-config-version.cmake",
+		"/opt/homebrew/lib/cmake/fmt/fmt-config.cmake",
+		"/opt/homebrew/lib/cmake/fmt/fmt-targets.cmake",
+		"/opt/homebrew/lib/cmake/fmt/fmt-targets-release.cmake",
+		"/opt/homebrew/lib/cmake/spdlog/spdlogConfigTargets.cmake",
+		"/opt/homebrew/lib/cmake/spdlog/spdlogConfigTargets-release.cmake"
 	],
 	"CMAKE_SOURCE_DIR" : "/Users/hamza/orderbook-project",
 	"CROSS_CONFIG" : false,
@@ -463,12 +478,6 @@
 			null
 		],
 		[
-			"/Users/hamza/orderbook-project/frontend/chart_widget.h",
-			"MU",
-			"W4B5VDZ4WS/moc_chart_widget.cpp",
-			null
-		],
-		[
 			"/Users/hamza/orderbook-project/frontend/mainwindow.h",
 			"MU",
 			"W4B5VDZ4WS/moc_mainwindow.cpp",
@@ -480,13 +489,17 @@
 	"MOC_COMPILATION_FILE" : "/Users/hamza/orderbook-project/build/orderbook_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
+		"FMT_SHARED",
 		"QT_CHARTS_LIB",
 		"QT_CORE_LIB",
 		"QT_GUI_LIB",
 		"QT_NO_DEBUG",
 		"QT_OPENGLWIDGETS_LIB",
 		"QT_OPENGL_LIB",
-		"QT_WIDGETS_LIB"
+		"QT_WIDGETS_LIB",
+		"SPDLOG_COMPILED_LIB",
+		"SPDLOG_FMT_EXTERNAL",
+		"SPDLOG_SHARED_LIB"
 	],
 	"MOC_DEPEND_FILTERS" : 
 	[
@@ -513,6 +526,7 @@
 		"/opt/homebrew/opt/qt@6/lib/QtOpenGL.framework",
 		"/opt/homebrew/opt/qt@6/lib/QtOpenGLWidgets.framework/Headers",
 		"/opt/homebrew/opt/qt@6/lib/QtOpenGLWidgets.framework",
+		"/opt/homebrew/include",
 		"/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1",
 		"/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include",
 		"/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include",
@@ -557,11 +571,6 @@
 			null
 		],
 		[ "/Users/hamza/orderbook-project/backend/orderbook.cpp", "MU", null ],
-		[
-			"/Users/hamza/orderbook-project/frontend/chart_widget.cpp",
-			"MU",
-			null
-		],
 		[ "/Users/hamza/orderbook-project/frontend/mainwindow.cpp", "MU", null ],
 		[ "/Users/hamza/orderbook-project/main.cpp", "MU", null ]
 	],

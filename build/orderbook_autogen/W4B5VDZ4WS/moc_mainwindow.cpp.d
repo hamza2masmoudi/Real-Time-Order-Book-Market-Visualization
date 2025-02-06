@@ -843,14 +843,21 @@
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/QAbstractAxis \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/QAbstractSeries \
+  /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/QCandlestickSeries \
+  /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/QCandlestickSet \
+  /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/QCategoryAxis \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/QChart \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/QChartGlobal \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/QChartView \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/QLegend \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/QLineSeries \
+  /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/QValueAxis \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/QXYSeries \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/qabstractaxis.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/qabstractseries.h \
+  /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/qcandlestickseries.h \
+  /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/qcandlestickset.h \
+  /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/qcategoryaxis.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/qchart.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/qchartglobal.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/qchartview.h \
@@ -858,6 +865,7 @@
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/qlineseries.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/qtcharts-config.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/qtchartsexports.h \
+  /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/qvalueaxis.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCharts.framework/Versions/A/Headers/qxyseries.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCore.framework/Versions/A/Headers/QList \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCore.framework/Versions/A/Headers/QMargins \
@@ -921,6 +929,7 @@
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCore.framework/Versions/A/Headers/qhashfunctions.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCore.framework/Versions/A/Headers/qiodevice.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCore.framework/Versions/A/Headers/qiodevicebase.h \
+  /opt/homebrew/Cellar/qt/6.7.3/lib/QtCore.framework/Versions/A/Headers/qitemselectionmodel.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCore.framework/Versions/A/Headers/qiterable.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCore.framework/Versions/A/Headers/qiterator.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtCore.framework/Versions/A/Headers/qlatin1stringview.h \
@@ -1048,21 +1057,27 @@
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtGui.framework/Versions/A/Headers/qvectornd.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtGui.framework/Versions/A/Headers/qwindowdefs.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/QComboBox \
+  /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/QFormLayout \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/QGraphicsView \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/QGraphicsWidget \
-  /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/QHBoxLayout \
+  /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/QGroupBox \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/QLabel \
+  /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/QLayout \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/QLineEdit \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/QMainWindow \
+  /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/QProgressBar \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/QPushButton \
-  /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/QVBoxLayout \
+  /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/QSplitter \
+  /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/QTableWidget \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qabstractbutton.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qabstractitemdelegate.h \
+  /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qabstractitemview.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qabstractscrollarea.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qabstractslider.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qabstractspinbox.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qboxlayout.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qcombobox.h \
+  /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qformlayout.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qframe.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qgraphicsitem.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qgraphicslayoutitem.h \
@@ -1070,19 +1085,24 @@
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qgraphicsview.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qgraphicswidget.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qgridlayout.h \
+  /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qgroupbox.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qlabel.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qlayout.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qlayoutitem.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qlineedit.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qmainwindow.h \
+  /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qprogressbar.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qpushbutton.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qrubberband.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qscrollarea.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qsizepolicy.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qslider.h \
+  /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qsplitter.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qstyle.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qstyleoption.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qtabbar.h \
+  /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qtableview.h \
+  /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qtablewidget.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qtabwidget.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qtwidgets-config.h \
   /opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsexports.h \
