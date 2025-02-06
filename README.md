@@ -1,97 +1,129 @@
-# **Real-Time Order Book & Market Visualization**
+# REAL-TIME ORDER BOOK & MARKET VISUALIZATION
 
-## **Overview**
-A **real-time order book** and **interactive market depth visualizer** built with **C++** and **Qt6**. It simulates a live trading environment where users can **place orders**, **view market depth**, and **monitor trade execution**. The project is designed for **quantitative finance** and **high-frequency trading (HFT) system simulation**, demonstrating your ability to handle performance-critical systems while delivering a polished user experience.
+## OVERVIEW
 
----
+This project is a real-time trading simulation that demonstrates:
 
-## **Features**
-### **📊 Order Book & Market Visualization**
-- Displays **live bid/ask price levels** using a **QtCharts-based depth chart**.
-- Shows a **dynamic order book with real-time updates**.
+1. **A multi-threaded matching engine (C++)**, which handles buy/sell orders, computes trades, and maintains an order book.  
+2. **A polished Qt-based GUI (C++)**, featuring:
+   - Live order book depth chart  
+   - Advanced candlestick chart with a moving average  
+   - Interactive metrics dashboard (latency, throughput)  
+   - Trade history table  
+3. **Simulated market data** (both limit and market orders), so the system feels “live.”
 
-### **⚡ High-Performance Matching Engine**
-- Implements an **efficient limit order book** for order matching.
-- Uses **multi-threading** for processing **buy/sell orders** in real time.
-
-### **📈 Real-Time Order Simulation**
-- Generates **random buy and sell orders** at different price levels.
-- Simulates **market activity** with updates **every 500ms**.
-
-### **🛠️ Interactive Trading Interface**
-- **Users can manually place orders** through a form.
-- **Input fields for price and quantity**, with a **buy/sell option**.
-- **Real-time performance metrics** (processed orders counter).
-
-### **🔍 Risk Management & Error Handling**
-- **User input validation** prevents invalid trades.
-- **Real-time error messages** for incorrect values.
-- **Automatic cleanup of stale orders**.
+It is designed to show performance-critical multi-threading, user interface design (Qt), basic financial logic (limit/market orders), trade recording, and real-time metrics.
 
 ---
 
-## **Installation & Setup**
+## FEATURES
 
-### **1️⃣ Install Dependencies**
-#### **For macOS (Homebrew)**
+### 1. MULTI-THREADED MATCHING ENGINE
+- Processes incoming orders via a thread-safe queue.  
+- Supports limit orders (price-based matching) and market orders (immediate fill).  
+- Tracks partial and full matches; unmatched remainder is added to the order book.  
+- Records latency from order submission to final processing.  
+- Calculates throughput (orders per second) since engine startup.
 
-brew install qt@6
+### 2. ORDER BOOK & TRADE HISTORY
+- Maintains aggregated bid/ask volumes at each price.  
+- “Trade” events are recorded when orders are matched; a history is displayed in a Qt table.  
+- Simulated buy/sell orders arrive periodically (limit or market), reflecting market movement.
 
-# For Linux
-sudo apt install qt6-base-dev qt6-charts-dev
+### 3. ADVANCED CHARTING
+- **Order Book Depth Chart:**  
+  Shows aggregated bids (line) and asks (line), updated in real time.  
+- **Candlestick Chart:**  
+  Displays randomized open-high-low-close (OHLC) data, plus a moving average overlay.  
+- **Zooming & Panning:**  
+  Charts support mouse-based zoom, interactive tooltips, and dragging.
 
-# 2️⃣ Clone the Repository
-git clone 
-cd orderbook-project
+### 4. LIVE METRICS DASHBOARD
+- **Latency:** Average time (ms) from submission to final matching in the engine.  
+- **Throughput:** Orders per second processed since engine start.  
+- UI uses progress bars for a quick glance, plus numeric labels for precise values.
 
-# 3️⃣ Build the Project
-mkdir build && cd build
-cmake -DCMAKE_PREFIX_PATH=/opt/homebrew/opt/qt@6 ..
-make -j8
+### 5. SIMULATION & USER INTERACTION
+- **Automatic “live market data” feed:** Market orders at random intervals (e.g., every 300ms).  
+- **Automatic limit order feed:** Limit orders at random intervals (e.g., every 500ms).  
+- **Manual Order Submission:**  
+  A form (price, quantity, side: buy/sell, order type: limit/market/etc.) to place custom orders.
 
-# 4️⃣ Run the Application
-./orderbook
+### 6. ROBUST LOGGING (using spdlog if installed)
+- Logs order submissions, partial/fill events, errors, and engine lifecycle to the console (or a file, if configured).  
+- Simplifies debugging and performance analysis.
+---
 
-## Project Structure
+## HOW TO BUILD & RUN
 
-- **backend/**
-  - `orderbook.h` - Core data structures for order book
-  - `orderbook.cpp` - Handles order placement and execution
-  - `matching_engine.h` - Matching logic for buy/sell orders
-  - `matching_engine.cpp` - Order matching logic
+### 1. INSTALL DEPENDENCIES  
+   - Qt6 (Core, Gui, Widgets, Charts). On macOS with Homebrew:  
+     ```bash
+     brew install qt@6
+     ```  
+   - (Optional) spdlog for robust logging. Example:  
+     ```bash
+     brew install spdlog
+     ```
+     or on Ubuntu:
+     ```bash
+     sudo apt-get install libspdlog-dev
+     ```
+   
+### 2. CLONE & PREPARE  
+   ```bash
+   cd /path/to/projects
+   git clone project link
+   cd orderbook-project
+   ```
 
-- **frontend/**
-  - `mainwindow.h` - UI logic for interactive trading
-  - `mainwindow.cpp` - Trading interface and order simulation
-  - `chart_widget.h` - Handles QtCharts visualization
-  - `chart_widget.cpp` - Manages chart rendering
+### 3. BUILD  
+   ```bash
+   mkdir build && cd build
+   cmake -DCMAKE_PREFIX_PATH=/opt/homebrew/opt/qt@6 ..
+   make -j8
+   ```
 
-- **Root Files:**
-  - `main.cpp` - Entry point of the application
-  - `CMakeLists.txt` - Build configuration
-  - `README.md` - Project Documentation
+### 4. RUN  
+   ```bash
+   ./orderbook
+   ```
+   A window appears with:
+   - (a) “Metrics Dashboard” for latency & throughput  
+   - (b) “Order Submission” panel  
+   - (c) Real-time depth chart & candlestick chart  
+   - (d) Trade history table
 
+---
 
-## How It Works
+## QUICK DEMO (OPTIONAL)
 
-1. **Matching Engine**
-   - Maintains a **limit order book** with **efficient data structures**.
-   - Matches **incoming buy/sell orders** using a **price-time priority system**.
+1. Launch the app:  
+   ```bash
+   ./orderbook
+   ```
+2. Observe:
+   - Random limit orders arrive ~every 500ms (`simulateOrder`).  
+   - Random market orders arrive ~every 300ms (`simulateLiveMarketData`).  
+   - The depth chart updates with aggregated Bids/Asks.  
+   - The candlestick chart shows random OHLC data plus a moving average overlay.  
+   - The trade history table populates each time a match event occurs (partial or full fill).  
+   - The metrics dashboard progress bars + labels reflect average latency and throughput.
 
-2. **Real-Time Order Simulation**
-   - Every **500ms**, a **random order** is generated and sent to the **matching engine**.
-   - Orders are executed based on the **market state**.
+---
 
-3. **GUI & Order Visualization**
-   - **QtCharts** is used to **plot market depth**.
-   - Users can **place orders manually** or observe **automated order execution**.
+## POSSIBLE EXTENSIONS
+- More advanced order types (stop-loss, iceberg).  
+- Historical data playback / backtesting.  
+- Real-time feed from an external API.  
+- Finer performance instrumentation (more detailed metrics, event logs).  
+- REST/WebSocket API to let external apps interact with the engine.
 
-## Potential Enhancements
+---
 
-- **📡 Live Market Data Integration** (Fetch real-time data from an API).
-- **📉 Advanced Charting** (Candlestick charts, moving averages).
-- **📊 Performance Optimization** (Leverage parallel processing for order execution).
-- **🛠 API Support** (Expose endpoints for external bots to trade on the simulated order book).
+## NOTES
+- If **spdlog** is not found during CMake, the engine logs to `std::cerr` instead.  
+- The “simulateLiveMarketData” approach is purely for demonstration. A real feed might parse data from a socket or CSV file.
 
 
 **Hamza Masmoudi**  
