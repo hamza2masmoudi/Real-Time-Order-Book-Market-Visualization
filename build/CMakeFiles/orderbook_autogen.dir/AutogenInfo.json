@@ -443,21 +443,18 @@
 		"/opt/homebrew/opt/qt@6/lib/cmake/Qt6Charts/Qt6ChartsTargets-release.cmake",
 		"/opt/homebrew/opt/qt@6/lib/cmake/Qt6Charts/Qt6ChartsAdditionalTargetInfo.cmake",
 		"/opt/homebrew/opt/qt@6/lib/cmake/Qt6Charts/Qt6ChartsVersionlessTargets.cmake",
-		"/opt/homebrew/lib/cmake/spdlog/spdlogConfigVersion.cmake",
-		"/opt/homebrew/lib/cmake/spdlog/spdlogConfig.cmake",
-		"/opt/homebrew/share/cmake/Modules/FindThreads.cmake",
-		"/opt/homebrew/share/cmake/Modules/CheckLibraryExists.cmake",
-		"/opt/homebrew/share/cmake/Modules/CheckIncludeFileCXX.cmake",
-		"/opt/homebrew/share/cmake/Modules/CheckCXXSourceCompiles.cmake",
+		"/opt/homebrew/share/cmake/Modules/FindCURL.cmake",
 		"/opt/homebrew/share/cmake/Modules/FindPackageHandleStandardArgs.cmake",
 		"/opt/homebrew/share/cmake/Modules/FindPackageMessage.cmake",
-		"/opt/homebrew/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
-		"/opt/homebrew/lib/cmake/fmt/fmt-config-version.cmake",
-		"/opt/homebrew/lib/cmake/fmt/fmt-config.cmake",
-		"/opt/homebrew/lib/cmake/fmt/fmt-targets.cmake",
-		"/opt/homebrew/lib/cmake/fmt/fmt-targets-release.cmake",
-		"/opt/homebrew/lib/cmake/spdlog/spdlogConfigTargets.cmake",
-		"/opt/homebrew/lib/cmake/spdlog/spdlogConfigTargets-release.cmake",
+		"/opt/homebrew/share/cmake/Modules/FindPkgConfig.cmake",
+		"/opt/homebrew/share/cmake/Modules/FindPackageHandleStandardArgs.cmake",
+		"/opt/homebrew/share/cmake/Modules/FindPackageMessage.cmake",
+		"/opt/homebrew/share/cmake/Modules/SelectLibraryConfigurations.cmake",
+		"/opt/homebrew/share/cmake/nlohmann_json/nlohmann_jsonConfigVersion.cmake",
+		"/opt/homebrew/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake",
+		"/opt/homebrew/share/cmake/Modules/FindPackageHandleStandardArgs.cmake",
+		"/opt/homebrew/share/cmake/Modules/FindPackageMessage.cmake",
+		"/opt/homebrew/share/cmake/nlohmann_json/nlohmann_jsonTargets.cmake",
 		"/Users/hamza/orderbook-project/resources.qrc"
 	],
 	"CMAKE_SOURCE_DIR" : "/Users/hamza/orderbook-project",
@@ -466,6 +463,12 @@
 	"DEP_FILE_RULE_NAME" : "orderbook_autogen/timestamp",
 	"HEADERS" : 
 	[
+		[
+			"/Users/hamza/orderbook-project/backend/market_data.h",
+			"MU",
+			"FVSNT77ZGO/moc_market_data.cpp",
+			null
+		],
 		[
 			"/Users/hamza/orderbook-project/backend/matching_engine.h",
 			"MU",
@@ -490,17 +493,13 @@
 	"MOC_COMPILATION_FILE" : "/Users/hamza/orderbook-project/build/orderbook_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
-		"FMT_SHARED",
 		"QT_CHARTS_LIB",
 		"QT_CORE_LIB",
 		"QT_GUI_LIB",
 		"QT_NO_DEBUG",
 		"QT_OPENGLWIDGETS_LIB",
 		"QT_OPENGL_LIB",
-		"QT_WIDGETS_LIB",
-		"SPDLOG_COMPILED_LIB",
-		"SPDLOG_FMT_EXTERNAL",
-		"SPDLOG_SHARED_LIB"
+		"QT_WIDGETS_LIB"
 	],
 	"MOC_DEPEND_FILTERS" : 
 	[
@@ -513,6 +512,7 @@
 	[
 		"/Users/hamza/orderbook-project/backend",
 		"/Users/hamza/orderbook-project/frontend",
+		"/Users/hamza/orderbook-project/third_party",
 		"/opt/homebrew/opt/qt@6/lib/QtCore.framework/Headers",
 		"/opt/homebrew/opt/qt@6/lib/QtCore.framework",
 		"/opt/homebrew/opt/qt@6/share/qt/mkspecs/macx-clang",
@@ -528,9 +528,9 @@
 		"/opt/homebrew/opt/qt@6/lib/QtOpenGLWidgets.framework/Headers",
 		"/opt/homebrew/opt/qt@6/lib/QtOpenGLWidgets.framework",
 		"/opt/homebrew/include",
+		"/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include",
 		"/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1",
 		"/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include",
-		"/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include",
 		"/Library/Developer/CommandLineTools/usr/include"
 	],
 	"MOC_MACRO_NAMES" : 
@@ -555,7 +555,7 @@
 	],
 	"MOC_PREDEFS_FILE" : "/Users/hamza/orderbook-project/build/orderbook_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
-	"MOC_SKIP" : [ "/Users/hamza/orderbook-project/build/qrc_resources.cpp" ],
+	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 8,
 	"PARSE_CACHE_FILE" : "/Users/hamza/orderbook-project/build/CMakeFiles/orderbook_autogen.dir/ParseCache.txt",
@@ -566,6 +566,7 @@
 	"SETTINGS_FILE" : "/Users/hamza/orderbook-project/build/CMakeFiles/orderbook_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "/Users/hamza/orderbook-project/backend/market_data.cpp", "MU", null ],
 		[
 			"/Users/hamza/orderbook-project/backend/matching_engine.cpp",
 			"MU",
@@ -577,7 +578,7 @@
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],
-	"UIC_SKIP" : [ "/Users/hamza/orderbook-project/build/qrc_resources.cpp" ],
+	"UIC_SKIP" : [],
 	"UIC_UI_FILES" : [],
 	"USE_BETTER_GRAPH" : false,
 	"VERBOSITY" : 0

@@ -2,6 +2,9 @@
 /Users/hamza/orderbook-project/main.cpp
 /Users/hamza/orderbook-project/frontend/mainwindow.cpp
 /Users/hamza/orderbook-project/backend/matching_engine.cpp
+/Users/hamza/orderbook-project/backend/market_data.cpp
+/Users/hamza/orderbook-project/backend/orderbook.h
+/Users/hamza/orderbook-project/backend/matching_engine.h
 /Users/hamza/orderbook-project/frontend/mainwindow.h
  mmc:Q_OBJECT
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/Availability.h
@@ -10,13 +13,31 @@
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/AvailabilityMacros.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/AvailabilityVersions.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/TargetConditionals.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/__wctype.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_ctermid.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_ctype.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_locale.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_stdio.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_types.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_types/_intmax_t.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_types/_nl_item.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_types/_uint16_t.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_types/_uint32_t.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_types/_uint64_t.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_types/_uint8_t.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_types/_uintmax_t.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_types/_wctrans_t.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_types/_wctype_t.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_wctype.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_xlocale.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/alloca.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/arm/_limits.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/arm/_mcontext.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/arm/_types.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/arm/arch.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/arm/endian.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/arm/limits.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/arm/signal.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/arm/types.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/assert.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/adjacent_find.h
@@ -717,10 +738,8 @@
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/cstdlib
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/cstring
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/ctime
- mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/ctype.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/cwchar
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/cwctype
- mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/errno.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/exception
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/execution
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/functional
@@ -729,12 +748,9 @@
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/iosfwd
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/iterator
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/limits
- mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/limits.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/list
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/locale
- mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/locale.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/map
- mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/math.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/memory
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/mutex
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/new
@@ -742,14 +758,9 @@
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/optional
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/ratio
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/stdbool.h
- mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/stddef.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/stdexcept
- mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/stdint.h
- mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/stdio.h
- mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/stdlib.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/streambuf
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/string
- mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/string.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/string_view
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/system_error
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/tuple
@@ -760,18 +771,36 @@
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/variant
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/vector
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/version
- mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/wchar.h
- mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/wctype.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/ctype.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/errno.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/libkern/_OSByteOrder.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/libkern/arm/OSByteOrder.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/limits.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/locale.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/mach/arm/_structs.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/mach/machine/_structs.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/machine/_mcontext.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/machine/_types.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/machine/endian.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/machine/limits.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/machine/signal.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/machine/types.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/malloc/_malloc.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/malloc/_malloc_type.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/malloc/_ptrcheck.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/math.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/nl_types.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/pthread/pthread.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/pthread/pthread_impl.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/pthread/qos.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/pthread/sched.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/runetype.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/stddef.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/stdint.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/stdio.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/stdlib.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/string.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/strings.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_endian.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_posix_availability.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_pthread/_pthread_attr_t.h
@@ -791,6 +820,7 @@
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_blksize_t.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_caddr_t.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_clock_t.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_ct_rune_t.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_dev_t.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_errno_t.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_fd_clr.h
@@ -815,18 +845,25 @@
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_intptr_t.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_key_t.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_mach_port_t.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_mbstate_t.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_mode_t.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_nlink_t.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_null.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_off_t.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_offsetof.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_pid_t.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_ptrdiff_t.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_rsize_t.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_rune_t.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_seek_set.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_sigaltstack.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_sigset_t.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_size_t.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_ssize_t.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_suseconds_t.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_time_t.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_timespec.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_timeval.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_u_char.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_u_int.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_u_int16_t.h
@@ -834,16 +871,35 @@
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_u_int64_t.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_u_int8_t.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_u_short.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_ucontext.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_uid_t.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_uintptr_t.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_useconds_t.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_va_list.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_wchar_t.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_wint_t.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/appleapiopts.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/cdefs.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/errno.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/qos.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/resource.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/signal.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/stdio.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/syslimits.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/types.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/wait.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/time.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/wchar.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/wctype.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/xlocale.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/xlocale/__wctype.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/xlocale/_ctype.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/xlocale/_stdio.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/xlocale/_stdlib.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/xlocale/_string.h
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/xlocale/_time.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/xlocale/_wchar.h
+ mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/xlocale/_wctype.h
  mdp:/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h
  mdp:/Users/hamza/orderbook-project/build/orderbook_autogen/moc_predefs.h
  mdp:/Users/hamza/orderbook-project/frontend/mainwindow.h
@@ -1115,5 +1171,4 @@
  mdp:/opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsglobal.h
  mdp:/opt/homebrew/Cellar/qt/6.7.3/lib/QtWidgets.framework/Versions/A/Headers/qwidget.h
 /Users/hamza/orderbook-project/backend/orderbook.cpp
-/Users/hamza/orderbook-project/backend/orderbook.h
-/Users/hamza/orderbook-project/backend/matching_engine.h
+/Users/hamza/orderbook-project/backend/market_data.h

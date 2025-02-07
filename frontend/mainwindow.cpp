@@ -370,6 +370,7 @@ void MainWindow::submitOrder()
     }
 
     order.timestamp = static_cast<uint64_t>(QDateTime::currentMSecsSinceEpoch());
+    order.submit_time = std::chrono::steady_clock::now();
 
     engine->submit_order(order);
 

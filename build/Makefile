@@ -155,6 +155,30 @@ orderbook_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderbook_autogen.dir/build.make CMakeFiles/orderbook_autogen.dir/build
 .PHONY : orderbook_autogen/fast
 
+backend/market_data.o: backend/market_data.cpp.o
+.PHONY : backend/market_data.o
+
+# target to build an object file
+backend/market_data.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderbook.dir/build.make CMakeFiles/orderbook.dir/backend/market_data.cpp.o
+.PHONY : backend/market_data.cpp.o
+
+backend/market_data.i: backend/market_data.cpp.i
+.PHONY : backend/market_data.i
+
+# target to preprocess a source file
+backend/market_data.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderbook.dir/build.make CMakeFiles/orderbook.dir/backend/market_data.cpp.i
+.PHONY : backend/market_data.cpp.i
+
+backend/market_data.s: backend/market_data.cpp.s
+.PHONY : backend/market_data.s
+
+# target to generate assembly for a file
+backend/market_data.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderbook.dir/build.make CMakeFiles/orderbook.dir/backend/market_data.cpp.s
+.PHONY : backend/market_data.cpp.s
+
 backend/matching_engine.o: backend/matching_engine.cpp.o
 .PHONY : backend/matching_engine.o
 
@@ -251,6 +275,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderbook.dir/build.make CMakeFiles/orderbook.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+orderbook_autogen/EWIEGA46WW/qrc_resources.o: orderbook_autogen/EWIEGA46WW/qrc_resources.cpp.o
+.PHONY : orderbook_autogen/EWIEGA46WW/qrc_resources.o
+
+# target to build an object file
+orderbook_autogen/EWIEGA46WW/qrc_resources.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderbook.dir/build.make CMakeFiles/orderbook.dir/orderbook_autogen/EWIEGA46WW/qrc_resources.cpp.o
+.PHONY : orderbook_autogen/EWIEGA46WW/qrc_resources.cpp.o
+
+orderbook_autogen/EWIEGA46WW/qrc_resources.i: orderbook_autogen/EWIEGA46WW/qrc_resources.cpp.i
+.PHONY : orderbook_autogen/EWIEGA46WW/qrc_resources.i
+
+# target to preprocess a source file
+orderbook_autogen/EWIEGA46WW/qrc_resources.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderbook.dir/build.make CMakeFiles/orderbook.dir/orderbook_autogen/EWIEGA46WW/qrc_resources.cpp.i
+.PHONY : orderbook_autogen/EWIEGA46WW/qrc_resources.cpp.i
+
+orderbook_autogen/EWIEGA46WW/qrc_resources.s: orderbook_autogen/EWIEGA46WW/qrc_resources.cpp.s
+.PHONY : orderbook_autogen/EWIEGA46WW/qrc_resources.s
+
+# target to generate assembly for a file
+orderbook_autogen/EWIEGA46WW/qrc_resources.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderbook.dir/build.make CMakeFiles/orderbook.dir/orderbook_autogen/EWIEGA46WW/qrc_resources.cpp.s
+.PHONY : orderbook_autogen/EWIEGA46WW/qrc_resources.cpp.s
+
 orderbook_autogen/mocs_compilation.o: orderbook_autogen/mocs_compilation.cpp.o
 .PHONY : orderbook_autogen/mocs_compilation.o
 
@@ -275,30 +323,6 @@ orderbook_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderbook.dir/build.make CMakeFiles/orderbook.dir/orderbook_autogen/mocs_compilation.cpp.s
 .PHONY : orderbook_autogen/mocs_compilation.cpp.s
 
-qrc_resources.o: qrc_resources.cpp.o
-.PHONY : qrc_resources.o
-
-# target to build an object file
-qrc_resources.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderbook.dir/build.make CMakeFiles/orderbook.dir/qrc_resources.cpp.o
-.PHONY : qrc_resources.cpp.o
-
-qrc_resources.i: qrc_resources.cpp.i
-.PHONY : qrc_resources.i
-
-# target to preprocess a source file
-qrc_resources.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderbook.dir/build.make CMakeFiles/orderbook.dir/qrc_resources.cpp.i
-.PHONY : qrc_resources.cpp.i
-
-qrc_resources.s: qrc_resources.cpp.s
-.PHONY : qrc_resources.s
-
-# target to generate assembly for a file
-qrc_resources.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderbook.dir/build.make CMakeFiles/orderbook.dir/qrc_resources.cpp.s
-.PHONY : qrc_resources.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -310,6 +334,9 @@ help:
 	@echo "... orderbook_autogen"
 	@echo "... orderbook_autogen_timestamp_deps"
 	@echo "... orderbook"
+	@echo "... backend/market_data.o"
+	@echo "... backend/market_data.i"
+	@echo "... backend/market_data.s"
 	@echo "... backend/matching_engine.o"
 	@echo "... backend/matching_engine.i"
 	@echo "... backend/matching_engine.s"
@@ -322,12 +349,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... orderbook_autogen/EWIEGA46WW/qrc_resources.o"
+	@echo "... orderbook_autogen/EWIEGA46WW/qrc_resources.i"
+	@echo "... orderbook_autogen/EWIEGA46WW/qrc_resources.s"
 	@echo "... orderbook_autogen/mocs_compilation.o"
 	@echo "... orderbook_autogen/mocs_compilation.i"
 	@echo "... orderbook_autogen/mocs_compilation.s"
-	@echo "... qrc_resources.o"
-	@echo "... qrc_resources.i"
-	@echo "... qrc_resources.s"
 .PHONY : help
 
 

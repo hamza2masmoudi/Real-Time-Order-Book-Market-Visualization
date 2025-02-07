@@ -6,7 +6,7 @@
 #include <cstdint>
 #include <cmath>
 #include <algorithm>
-#include <chrono>  // For steady_clock::time_point
+#include <chrono>
 
 enum class OrderType { LIMIT, MARKET };
 
@@ -14,19 +14,16 @@ struct Order {
     uint64_t id;
     double price;
     double quantity;
-    bool is_bid;    // true = buy, false = sell
+    bool is_bid;
     OrderType type;
-    uint64_t timestamp;  // For your existing usage (e.g., real-time epoch)
-
-    // New: submission time for latency
+    uint64_t timestamp;
     std::chrono::steady_clock::time_point submit_time;
 };
 
-// The OrderBook is unchanged except for your existing logic:
 class OrderBook {
 public:
     struct Trade {
-        uint64_t timestamp;
+        uint64_t timestamp;  // Fix: Ensure timestamp exists
         double price;
         double quantity;
         uint64_t taker_order_id;
@@ -42,8 +39,8 @@ public:
     std::vector<Trade> get_trades();
 
 private:
-    std::map<double, double, std::greater<double>> bids; // aggregated buy volumes
-    std::map<double, double> asks;                       // aggregated sell volumes
+    std::map<double, double, std::greater<double>> bids;
+    std::map<double, double> asks;
     std::vector<Trade> trades;
     mutable std::mutex mtx;
 };

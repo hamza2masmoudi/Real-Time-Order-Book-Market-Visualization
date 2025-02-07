@@ -1,4 +1,3 @@
-#define FMT_SHARED 1
 #define QT_CHARTS_LIB 1
 #define QT_CORE_LIB 1
 #define QT_GUI_LIB 1
@@ -7,9 +6,6 @@
 #define QT_OPENGL_LIB 1
 #define QT_WIDGETS_LIB 1
 #define SIZEOF_DPTR (sizeof(void*))
-#define SPDLOG_COMPILED_LIB 1
-#define SPDLOG_FMT_EXTERNAL 1
-#define SPDLOG_SHARED_LIB 1
 #define _LP64 1
 #define __AARCH64EL__ 1
 #define __AARCH64_CMODEL_SMALL__ 1
